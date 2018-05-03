@@ -1,0 +1,40 @@
+<!--pages/createClazz/createClazz.wxml-->
+<view class='create-clazz-container'>
+  <view class='avatar-box'>
+    <image class='clazz-avatar'></image>
+  </view>
+
+  <view class='line'></view>
+
+  <view class='clazz-info-box'>
+    <view class='clazz-info-item'>
+      <view class='public-item'>
+        <text class='public-name'>班级名称</text>
+        <view class='public-name-input'>
+          <input value='{{ clazz_Name }}' bindinput='clazzOninput' type='text' placeholder='请输入班级名称' />
+          <text>></text>
+        </view>
+      </view>
+    </view>
+    <view class='clazz-info-item'>
+      <view class='public-item'>
+        <text class='public-name'>班级群号</text>
+        <view class='public-name-input'>
+          <input value='741095' />
+          <text>></text>
+        </view>
+      </view>
+    </view>
+    <view class='clazz-info-item'>
+      <view class='public-item'>
+        <text class='public-name'>创建时间</text>
+        <view class='public-name-input'>
+          <input value='2018-01-11' />
+          <text>></text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <button class='create-clazz-button' bindtap='createOntap'>创建</button>
+</view>

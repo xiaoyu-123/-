@@ -1,0 +1,151 @@
+<view class='navbar'>
+  <view class='{{navbarStyle.learnBook}}' bindtap='learnbookOntap'>学课本</view>
+  <view class='{{navbarStyle.exerciseBook}}' bindtap='exercisebookOntap'>作业本</view>
+  <view class='{{navbarStyle.wrongBook}}' bindtap='wrongbookOntap'>错题本</view>
+</view>
+<block wx:if='{{pageVisible.learnBook}}'>
+  <view class='learnBook-container'>
+    <image src='{{imgUrl}}/images/bg_learnBook.png' class='bg_learnBook'></image>
+    <view class='chapter-container'>
+      <view class='topBanner'>
+        <view class='topBanner_left'>教材</view>
+        <view class='topBanner_right' bindtap='selBook'>
+          <view class='right_book'>{{data.publisher.name}} {{data.name}}</view>
+          <view class='right_img'>
+            <image src='{{imgUrl}}/images/challenge1-18.png' />
+          </view>
+        </view>
+      </view>
+      <block wx:if='{{learnBookVisible.chapter_item}}'>
+        <view class='chapter-item' bindtap='chapteritemOntap' wx:for='{{list}}'>
+          <text class='items'>{{item.name}}</text>
+          <block wx:for="{{item.sections}}" wx:for-item="oStr">
+            <text class='item'>{{oStr.name}}</text>
+          </block>
+        </view>
+      </block>
+      <block wx:if='{{learnBookVisible.chapter_item_detail}}'>
+        <view class='chapter_item_detail'>
+          <image />
+        </view>
+        <view class='chapter_item_detail-btnbox'>
+          <button bindtap=''>马上闯关</button>
+          <button bindtap='returnIndex'>返回首页</button>
+        </view>
+      </block>
+    </view>
+  </view>
+</block>
+
+<block wx:if='{{pageVisible.exerciseBook}}'>
+  <view wx:if='{{haveClazz}}' class='exerciseBook-container'>
+    <view class='search-box'>
+      <input class='search' placeholder='请输入日期/章节名称搜索' placeholder-class='search-placeholder' />
+      <image src='{{imgUrl}}/images/search-button.png' class='search-button' />
+    </view>
+    <view class='eb-clazzinfo-box'>
+      <view class='eb-clazzinfo-left'>
+        <image class='eb-clazzinfo-left-icon' src='{{imgUrl}}/images/math-icon.png' />
+        <view>
+          <text>数学</text>
+          <text>{{className}}</text>
+        </view>
+      </view>
+      <view class='eb-clazzinfo-right'>
+        <text bindtap='lastWeek'>上一周</text>
+      </view>
+    </view>
+    <view class='eb-homework-box'>
+      <view class='eb-homework-item' wx:for="{{homeworkList}}">
+        <view class='eb-homework-item-top'>
+          <text>{{item.description}}</text>
+          <text>共{{item.number}}题</text>
+        </view>
+        <view class='eb-homework-item-middle'>
+          <view>
+            <view wx:for="{{item.answer}}" wx:for-item="answer">
+              <image class='eb-homework-item-avatar' src='{{answer.student.avatarUrl}}' />
+            </view>
+          </view>
+          <view class='yellow' catchtap='homeworkClick' data-id='{{item.id}}'>{{item.is_submit}}</view>
+        </view>
+        <view class='eb-homework-item-bottom'>
+          <view>最高可得
+            <image src='{{imgUrl}}/images/coin.png' />
+            <text>56</text>
+          </view>
+          <text>{{item.created_at}}至{{item.time}}</text>
+        </view>
+      </view>
+    </view>
+    <view wx:if='{{!haveClazz}}' class='noclazz-container'>
+      <image />
+      <text>通过班号加入老师的班级</text>
+      <view bindtap='joinclazzOntap'>加入班级</view>
+    </view>
+  </view>
+</block>
+
+<block wx:if='{{pageVisible.wrongBook}}'>
+  <view class='wrongBook-container'>
+    <view class='wrongBook-item'>
+      <view class='wrongBook-item-info'>
+        <image src='{{imgUrl}}/images/math-icon.png' />
+        <text>数学</text>
+        <text>人教版 上册 第一章</text>
+        <text>18题</text>
+      </view>
+      <text class='wrongBook-item-sign'>></text>
+    </view>
+
+    <view class='wrongBook-item'>
+      <view class='wrongBook-item-info'>
+        <image src='{{imgUrl}}/images/math-icon.png' />
+        <text>数学</text>
+        <text>人教版 上册 第一章</text>
+        <text>18题</text>
+      </view>
+      <text class='wrongBook-item-sign'>></text>
+    </view>
+
+    <view class='wrongBook-item'>
+      <view class='wrongBook-item-info'>
+        <image src='{{imgUrl}}/images/math-icon.png' />
+        <text>数学</text>
+        <text>人教版 上册 第一章</text>
+        <text>18题</text>
+      </view>
+      <text class='wrongBook-item-sign'>></text>
+    </view>
+
+    <view class='wrongBook-item'>
+      <view class='wrongBook-item-info'>
+        <image src='{{imgUrl}}/images/math-icon.png' />
+        <text>数学</text>
+        <text>人教版 上册 第一章</text>
+        <text>18题</text>
+      </view>
+      <text class='wrongBook-item-sign'>></text>
+    </view>
+
+    <view class='wrongBook-item'>
+      <view class='wrongBook-item-info'>
+        <image src='{{imgUrl}}/images/math-icon.png' />
+        <text>数学</text>
+        <text>人教版 上册 第一章</text>
+        <text>18题</text>
+      </view>
+      <text class='wrongBook-item-sign'>></text>
+    </view>
+
+    <view class='wrongBook-item'>
+      <view class='wrongBook-item-info'>
+        <image src='{{imgUrl}}/images/math-icon.png' />
+        <text>数学</text>
+        <text>人教版 上册 第一章</text>
+        <text>18题</text>
+      </view>
+      <text class='wrongBook-item-sign'>></text>
+    </view>
+  </view>
+</block>

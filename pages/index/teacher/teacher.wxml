@@ -1,0 +1,27 @@
+<!--pages/index/teacher/teacher.wxml-->
+<view class='container'>
+  <image src='{{imgUrl}}/images/toTeacher.png' class='bg'></image>
+  <view class='content'>
+    <image src='{{imgUrl}}/images/teacherIcon.png' class='teacherIcon'></image>
+    <view class='remind'>
+      <text>您现在的操作是转换</text>
+      <text>教师</text>
+      <text>身份</text>
+    </view>
+    <view class='tips'>
+      <text>1.此次操作不可逆，确定身份之后无法修改。</text>
+      <text>2.老师身份需要认证，请认真填写您的资料。</text>
+    </view>
+    <view class='button-box'>
+      <button class='button-ok' bindtap='okButtonOntap'>
+        <text>确</text>
+        <text>认</text>
+      </button>
+      <button class='button-cancel' bindtap='returnButtonOntap'>
+        <text>放</text>
+        <text>弃</text>
+      </button>
+    </view>
+  </view>
+</view>
+

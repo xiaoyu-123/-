@@ -1,0 +1,148 @@
+/* pages/index/play/challenge_now/challenge_now.wxss */
+/* 挑战页 */
+
+.container{
+  width: 100%;
+  padding: 0;
+}
+.header{
+  width: 100%;
+}
+.header_left{
+  width: 182rpx;
+  height: 65rpx;
+  background-color: #33cc99;
+  text-align: center;
+  line-height: 65rpx;
+  border-radius: 30rpx;
+  margin-top: 70rpx;
+  margin-left: 50rpx;
+  float: left;
+}
+.header_left view{
+  float: left;
+  font-size: 36rpx;
+  color: #fff;
+}
+.header_left .L{
+  margin-left: 50rpx;
+  font-size:57rpx;
+  color: #ff6666;
+  line-height: 55rpx;
+}
+
+/*header_right*/
+.header_right{
+  float: right;
+  position: relative;
+}
+.header_right .right_circle{
+  width: 168rpx;
+  height: 168rpx;
+  border: 2px solid #3366cc;
+  border-radius: 50%;
+  margin-top: 40rpx;
+  margin-right: 150rpx;
+}
+.header_right .right_timer{
+  width: 240rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: #fff;
+  position: absolute;
+  left: -25rpx;
+  top:95rpx;
+  text-align: center;
+}
+.header_right .right_timer  view{
+  /* border: 1rpx solid red; */
+  color: #3366cc;
+  font-size: 79rpx;
+  /* margin-right:14px; */
+  text-align: center;
+  margin: auto;
+}
+/* 题目 */
+.topic{
+  width: 100%;
+  margin-top: 60rpx;
+}
+.topic_title{
+  width: 100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 34rpx;
+  color: #33cc99;
+  margin-left: 100rpx;
+}
+.topic_content{
+  width: 73%;
+  margin: auto;
+  /* height: 246rpx; */
+}
+.topic_content image{
+  width: 100%;
+  height: 100%;
+}
+/* 选择 */
+.select{
+  width: 100%;
+  margin-top: 45rpx;
+}
+.select .selectArr{
+  margin: 0 auto;
+  width: 520rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: rgba(0, 0, 0, .1);
+  border-radius: 35rpx;
+  margin-bottom: 40rpx;
+  color: #000;
+  font-size: 30rpx;
+}
+.select .selectArr view{
+  float: left;
+}
+.select .answer{
+  float: right;
+  margin-left: 50rpx;
+}
+.select .selectArr .AC{
+  margin-left: 65rpx;
+}
+.select .selectArr .selectS{
+  margin-left: 40rpx;
+}
+/* 正确 */
+.select .true{
+  background-color: #00cc99;
+  color: #fff;
+}
+/* 错误 */
+.select .flase{
+  background-color: #ff3366;
+  color: #fff;
+}
+.select .selectArr .truelogo{
+  float: right;
+  width: 36rpx;
+  height: 27rpx;
+  margin-right: 30rpx;
+  margin-top: 5rpx;
+  transform: r
+}
+.select .selectArr .truelogo image{
+  width: 100%;
+  height: 100%;
+}
+.select .selectArr .falselogo{
+  float: right;
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 30rpx;
+  margin-top: 5rpx;
+}
+.select .selectArr .falselogo image{
+  width: 100%;
+  height: 100%;
+}

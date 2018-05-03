@@ -1,0 +1,59 @@
+/**index.wxss**/
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+}
+
+.notice {
+  /* position: relative; */
+}
+
+.notice image {
+  position: absolute;
+  top: 0%;
+  width: 95%;
+  height: 94%;
+  left: 3%;
+  z-index: -2;
+}
+
+.title {
+  font-size: 46rpx;
+  color: #2171b5;
+  text-align: center;
+  margin-top: 28%;
+}
+
+.content_title{
+  text-align: center;
+  padding-top:10rpx;
+  font-size: 24rpx;
+  color: #93835E;
+  line-height: 46rpx;
+  font-family: "宋体";
+}
+
+.content {
+  margin: 0 auto;
+  width: 500rpx;
+  font-size: 24rpx;
+  color: #93835E;
+  line-height: 46rpx;
+  font-family: "宋体";
+}
+
+.confirm {
+  position: absolute;
+  padding: 20rpx 90rpx;
+  background: rgba(183, 172, 142, 1);
+  color: #fff;
+  font-size: 34rpx;
+  bottom: 19%;
+  right: 17%;
+  border-radius: 4px;
+}

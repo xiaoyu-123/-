@@ -1,0 +1,64 @@
+<view class='wrapper'>
+  <view class='bg'><image src='{{imgUrl}}/images/parent1-5.png'></image></view>
+  <view class='content'>
+    <view class='header'>
+      <view class='header_img'><image src='{{avatarUrl}}'></image></view>
+      <view class='name'>{{name}}</view>
+      <view class='school'>{{school_name}} {{grade}}</view>
+    </view>
+    <view class='center'>
+      <view class='center_title'>我是{{name}}的？</view>
+      <view class='center_content'>
+        <view class='list'>
+            <view class='list_li'>
+              <checkbox value='爸爸'bindchange='checkboxChange' checked=''>
+              <view class='list_img'><image src='{{imgUrl}}/images/parent1-6.png'></image></view>
+              <view class='list_name'>爸爸</view>
+              </checkbox>
+            </view>
+            <view class='list_li'>
+              <checkbox value='妈妈' bindchange='checkboxChange' checked=''>
+              <view class='list_img'><image src='{{imgUrl}}/images/parent1-7.png'></image></view>
+              <view class='list_name'>妈妈</view>
+              </checkbox>
+            </view>
+            <view class='list_li last'>
+              <checkbox value='爷爷'>
+              <view class='list_img'><image src='{{imgUrl}}/images/parent1-1.png'></image></view>
+              <view class='list_name'>爷爷</view>
+              </checkbox>
+            </view>
+         </view>
+         <view class='list'>
+            <view class='list_li'>
+              <checkbox value='奶奶'>            
+              <view class='list_img'><image src='{{imgUrl}}/images/parent1-8.png'></image></view>
+              <view class='list_name'>奶奶</view>
+              </checkbox>
+            </view>
+            <view class='list_li'>
+              <checkbox value='姥爷'>
+              <view class='list_img'><image src='{{imgUrl}}/images/parent1-2.png'></image></view>
+              <view class='list_name'>姥爷</view>
+              </checkbox>
+            </view>
+            <view class='list_li last'>
+              <checkbox value='姥姥'>
+              <view class='list_img'><image src='{{imgUrl}}/images/parent1-3.png'></image></view>
+              <view class='list_name'>姥姥</view>
+              </checkbox>
+            </view>
+         </view>
+         <view class='list last_list'>
+            <view class='list_li last_li'>
+              <checkbox value='其他监护人'>
+              <view class='list_img'><image src='{{imgUrl}}/images/parent1-4.png'></image></view>
+              <view class='list_name '>其他监护人</view>
+              </checkbox>
+            </view>          
+         </view>
+      </view>
+    </view>
+    <button bindtap='btnClick'>确认绑定</button>
+  </view>
+</view>

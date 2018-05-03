@@ -1,0 +1,61 @@
+/* pages/index/parent/parent.wxss */
+page {
+  height: 100%;
+}
+
+.bg {
+  background:#2172B4;
+  width: 100%;
+  height: 100%;
+}
+
+.bg_p {
+  position:absolute;
+top:-10%;
+left:-29%;
+width:180%;
+height:123%;
+opacity:.4;
+transform:scale(.8);
+
+}
+.head{
+  text-align: center;
+
+}
+.head image{
+  width:305rpx;
+  height: 305rpx;
+  margin:50rpx 0;
+
+}
+.content {
+  font-size:32rpx;
+color:#fff;
+line-height:54rpx;
+padding:0 40rpx;
+
+}
+.content view{
+opacity:.8;
+
+}
+.content .title{
+  font-size: 36rpx;
+  /* font-weight: bold; */
+  margin-bottom: 50rpx;
+  text-align: center;
+  opacity: 1;
+}
+button{
+  margin: 30rpx 30rpx;
+  color: #fff;
+  letter-spacing: 30rpx;
+}
+.confirm{
+  background: #2EDA9D;
+  margin-bottom: 60rpx;
+}
+.cancel{
+  background: #FF4144;
+}

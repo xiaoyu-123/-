@@ -1,0 +1,157 @@
+/* pages/index/friend/solo/solo.wxss */
+
+page {
+  height: 100%;
+}
+
+.bg {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(87, 204, 242, 1)), to(rgba(53, 135, 237, 1)));
+  width: 100%;
+  height: 100%;
+}
+
+.head {
+  display: flex;
+  padding: 40rpx 0;
+}
+
+.head>view {
+  width: 33.3%;
+  text-align: center;
+}
+
+.head view.c image {
+  width: 90rpx;
+  height: 90rpx;
+  border: 5px solid #fff;
+  border-radius: 100rpx;
+}
+
+.head  .c>view:first-child {
+  width: 63%;
+  height: 112rpx;
+  padding: 10rpx 15rpx;
+}
+
+.head  .c>view:last-child {
+  font-size: 30rpx;
+  color: #fff;
+  margin-top: 10rpx;
+}
+
+.head .green>view:first-child {
+  background: #15c4a9;
+  border-top-right-radius: 100rpx;
+  border-bottom-right-radius: 100rpx;
+  text-align: right;
+  box-shadow:-4rpx 1rpx 1rpx 0rpx #383838;
+position:relative;
+
+
+}
+
+.head .pink>view:first-child {
+  background: #ff5b82;
+  border-top-left-radius: 100rpx;
+  border-bottom-left-radius: 100rpx;
+  text-align: left;
+  /* float: right; */
+  box-shadow:0rpx 1rpx 1rpx 0rpx #383838;
+
+position:relative;
+left:26%;
+
+}
+
+.time {
+  text-align: center;
+}
+
+.time>view {
+  text-align: center;
+  border: 2px solid #fff;
+  width: 166rpx;
+  height: 166rpx;
+  border-radius: 100rpx;
+  position: relative;
+  margin: 0 auto;
+}
+
+.time>view>view {
+  font-size: 84rpx;
+  background: #55c8f2;
+  color: #fff;
+  position: absolute;
+  top: 14%;
+  left: -14%;
+}
+
+.topic {
+  display: flex;
+}
+
+.topic .pro {
+  width: 15%;
+}
+
+.topic .topic_detail {
+  width: 70%;
+}
+
+.topic .topic_detail image {
+  width: 86%;
+  height: 77rpx;
+  margin: 7%;
+}
+
+.topic_detail .title {
+  text-align: center;
+  font-size: 30rpx;
+  margin-bottom: 40rpx;
+  color: #fff;
+}
+
+.topic_detail .name {
+  font-size: 28rpx;
+  color: #fff;
+  line-height: 52rpx;
+}
+
+label {
+  display: block;
+  background: #eee;
+  margin: 40rpx 30rpx;
+  font-size: 28rpx;
+  padding: 17rpx 30rpx;
+  border-radius: 300rpx;
+  text-align: center;
+  position: relative;
+}
+
+radio {
+  width: 100%;
+}
+
+.true {
+  background: #06d6a0;
+  color: #fff;
+}
+
+.false {
+  background: #ef496f;
+  color: #fff;
+}
+
+label text {
+  font-size: 40rpx;
+  position: absolute;
+  top: 2%;
+}
+
+label.true text {
+  left: 5%;
+}
+
+label.false text {
+  right: 5%;
+}

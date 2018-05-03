@@ -1,0 +1,27 @@
+<!--pages/index/parent/studyPlay/studyPlay.wxml-->
+<view class='block'>
+  <image src='{{imgUrl}}/images/play01.png'></image>
+  <view class='content'>
+    <view>
+      <view class='title'>会员服务</view>
+      <view>1000人加入</view>
+    </view>
+    <!-- <view> -->
+      <button bindtap='vip'>立即开通</button>
+    <!-- </view> -->
+  </view>
+</view>
+<view class='block'>
+  <image src='{{imgUrl}}/images/play02.png'></image>
+  <view class='content'>
+    <view>
+      <view class='title'>金币购买</view>
+      <view>1000人加入</view>
+    </view>
+    <!-- <view> -->
+      <button bindtap='money'>立即开通</button>
+    <!-- </view> -->
+  </view>
+</view>
+<view class='more'>---- 更多服务敬请期待 ----</view>
+

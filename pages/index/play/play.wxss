@@ -1,0 +1,263 @@
+/* pages/index/play/play.wxss */
+.conatiner{
+  width: 100%;
+  overflow: hidden;
+  background-color: #99cccc;
+}
+/* 头部 */
+.header{
+  width: 100%;
+  position:relative;
+}
+.topBanner{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #3399cc;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+.topBanner_left{
+  float: left;
+  font-size: 30rpx;
+  color: #fff;
+  margin-left: 28rpx;
+}
+.topBanner_right{
+  float: right;
+  font-size: 30rpx;
+  color: #fff;
+  position: relative;
+}
+ .topBanner_right .right_book{
+   margin-right: 65rpx;
+   width: 260rpx;
+ }
+.topBanner_right .right_img{
+  width: 15rpx;
+  height: 25rpx;
+  position: absolute;
+  top: 0rpx;
+  right: 30rpx;
+
+}
+.topBanner_right .right_img image{
+  width: 100%;
+  height: 100%;
+}
+.header_title{
+  background-color: #333399;
+  border-radius: 10rpx;
+  width: 700rpx;
+  margin: 0 auto;
+  position: relative;
+
+}
+.title_bg{
+  width: 719rpx;
+  height: 238rpx;
+}
+.title_bg image{
+  width: 100%;
+  height: 100%;
+}
+.title_word{
+  width: 100%;
+  height: 220rpx;
+  background-color: rgba(255, 255, 255, .3);
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+}
+.title_word view{
+  position: absolute;
+  top: 115rpx;
+  left: 245rpx;
+  font-size: 34rpx;
+  color: #fff;
+}
+.content{
+  background-color:#99cccc;
+  width: 100%;
+  height:100%;
+  text-align: center;
+}
+/* 挑战关卡 */
+.challenge_pass{
+  width: 100%;
+  height: 100%;
+   margin-top:30rpx; 
+}
+.challenge_content{
+  padding-top: 25rpx;
+  width: 90%;
+  height: 170rpx;
+  margin: 0 auto;
+  background-color: #66ccff;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+.last_conten{
+  margin-bottom: 0;
+}
+.challenge_center{
+  width: 100%;
+  height: 130rpx;
+  background-color:rgba(102, 153, 204, .3);
+}
+.center_left{
+  float: left;
+  width: 82rpx;
+  height: 82rpx;
+}
+.center_left image{
+  margin-top: 16rpx;
+  margin-left: 57rpx;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5rpx solid #fff;
+}
+.center_center{
+  float: left;
+  width: 200rpx;
+  text-align: center;
+  margin-left: 20%;
+  color: #fff;
+}
+.center_center .first{
+  font-size: 30rpx;
+}
+.center_center .second{
+  font-size: 32rpx;
+  margin-top: 9rpx;
+  margin-bottom: 5rpx;
+
+}
+.center_center .last{
+  font-size: 20rpx;
+  width: 220rpx;
+}
+.btnChallenge{
+  width: 140rpx;
+  float: left;
+  margin-left: 80rpx;
+   margin-top: 20rpx; 
+}
+.btnChallenge>.key_suo{
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  left:-250rpx;
+  top:-25rpx;
+}
+.btnChallenge  .challenge_star{
+  float: left;
+  width: 41rpx;
+  height: 53rpx;
+}
+.btnChallenge  .challenge_star image{
+    width: 100%;
+    height: 100%;
+    transform:rotate(-10deg);
+}
+.btnChallenge .T image{
+   transform: rotate(10deg);
+   margin-left: 10rpx;
+ }
+ .btnChallenge .S image{
+   transform: rotate(-8deg);
+   margin-left: 5rpx;
+ }
+.btnChallenge button{
+  width: 135rpx;
+  height: 55rpx;
+  text-align: center;
+  line-height: 55rpx;
+  font-size: 28rpx;
+  background-color: #ff9900;
+  color: #fff;
+
+}
+
+.last_center{
+  position: relative;
+}
+.last_center_center{
+  color: #fff;
+  position: relative;
+}
+.last_last{
+  position: absolute;
+  width: 240rpx;  
+  height: 44rpx;  
+  background-color: #999;
+  border-radius: 5rpx;
+}
+
+.last_center  .suo{
+  width: 120rpx;
+  height: 153rpx;
+  position: absolute;
+  left: 255rpx;
+  top:-10rpx;
+}
+.last_center  .suo image{
+  width: 100%;
+  height: 100%;
+}
+/* 底部 */
+.footer_circle{
+  width: 100%;
+  background-color:#99cccc; 
+}
+ .circle_one{
+    width: 23rpx;
+    height: 23rpx;
+    border-radius: 50%;
+    background-color: rgba(204, 204, 255, .4);
+    margin-left: 335rpx;
+}
+.circle_two{
+    width: 28rpx;
+    height: 28rpx;
+    border-radius: 50%;
+    background-color:rgba(204, 204, 255, .6);
+    margin-left: 333rpx;
+    margin-top: 5rpx;
+}
+.circle_three{
+    width: 32rpx;
+    height: 32rpx;
+    border-radius: 50%;
+    background-color: #ccffff;
+   margin-left: 331rpx;
+    margin-top: 5rpx;
+}
+.circle_four{
+    width: 36rpx;
+    height: 36rpx;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: 329rpx;
+    margin-top: 5rpx;
+}
+.wenhao{
+  width: 64rpx;
+  height: 104rpx;
+  margin-left: 315rpx;
+  margin-top: 5rpx;
+}
+.wenhao image{
+  width: 100%;
+  height: 100%;
+}
+/* 闯关 */
+.last_chuangguan{
+  background-color: #66cc66;
+  color: #fff;
+  font-size: 28rpx;
+  line-height: 50rpx;
+}

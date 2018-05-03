@@ -1,0 +1,37 @@
+<!--pages/joinClazz/joinClazz.wxml-->
+<view class='joinclazz-container'>
+  <view class='search-box'>
+    <input class='search' placeholder='输入6位班号后自动出现结果' placeholder-class='search-placeholder' bindinput='classChange'/>
+    <view class='search-button' bindtap='btnJionclass'>确定</view>
+  </view>
+
+   <view class='joinclazz-item'>
+    <view class='joinclazz-item-left'>
+      <image class='joinclazz-item-avatar' />
+    </view>
+    <view class='joinclazz-item-center  '>
+      <text>{{list.class_name}}</text>
+      <text>{{list.teacher.name}}（{{list.class_number}}）</text>
+      <text>{{list.teacher.school_name}} {{list.teacher.grade.name}}</text>
+    </view>
+    <view class='joinclazz-item-right'>
+      <view bindtap='joinclazzOntap'>加入</view>
+    </view>
+  </view> 
+
+
+    <view class='joinclazz-item ' wx:for="{{list_s}}">
+    <view class='joinclazz-item-left'>
+      <image class='joinclazz-item-avatar' />
+    </view>
+    <view class='joinclazz-item-center'>
+      <text>{{item.class_name}}</text>
+      <text>{{item.teacher.name}}（{{item.class_number}}）</text>
+      <text>{{item.teacher.school_name}} {{item.teacher.grade.name}}</text>
+    </view>
+    <view class='joinclazz-item-right'>
+      <view bindtap='joinclazzOntap'>加入</view>
+    </view>
+  </view>
+
+</view>

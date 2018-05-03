@@ -1,0 +1,85 @@
+/* pages/index/friend/join/join.wxss */
+
+.bg {
+  width: 100%;
+  height: 110%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
+}
+
+.f view image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  margin: 10rpx;
+}
+
+.f view:first-child {
+  border-radius: 100rpx;
+  width: 120rpx;
+  height: 120rpx;
+  text-align: center;
+  vertical-align: middle;
+  background: #fff;
+}
+
+.f {
+  position: absolute;
+  color: #fff;
+  line-height: 48rpx;
+  text-align: center;
+}
+
+.f .name {
+  font-size: 32rpx;
+}
+
+.f .room {
+  font-size: 26rpx;
+}
+
+.f1 {
+  top: 14%;
+  left: 22%;
+}
+
+.f2 {
+  top: 53%;
+  right: 26%;
+}
+
+.tip {
+  font-size: 32rpx;
+  color: #fff;
+  margin: 20rpx 0;
+  text-align: center;
+}
+
+.ion {
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  display: flex;
+  margin-left: -160rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.ion>view {
+  background: #fff;
+  font-size: 26rpx;
+  color: #474db9;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  text-align: center;
+  margin: 0 30rpx;
+}
+
+.ion  image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 10rpx 0 0;
+}

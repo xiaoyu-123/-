@@ -1,0 +1,155 @@
+<block wx:if='{{pageVisible.publicPage}}'>
+<!--pages/publicHomework/publicHomework.wxml-->
+<view class='container'>
+  <view class='public-container'>
+    <view class='public-item'>
+      <text class='public-name'>作业名称</text>
+      <view class='public-name-input'>
+        <input value='{{homeworkName}}' placeholder='请输入作业名称' bindinput='homeworkNameOninput' />
+        <text></text>
+      </view>
+    </view>
+    <view class='public-item'>
+      
+        <text class='public-name'>截止日期</text>
+        <picker mode='date' bindchange='homeworkDateOnchange' >
+        <view class='public-name-input'>
+          <input value='{{homeworkDate}}' disabled='disabled' placeholder='请选择截止日期'/>
+          <text>></text>
+        </view>
+
+      </picker>
+    </view>
+  </view>
+
+  <view class='public-container'>
+    <view class='public-item'>
+      <text class='public-name'>随机主题</text>
+      <view class='radio-box'>
+        <radio color='#4993fa' checked='{{randomChecked}}' bindtap='randomRadioOntap'></radio>
+      </view>
+    </view>
+
+    <view class='public-item'>
+      <text class='public-name'>推荐出题</text>
+      <view class='radio-box'>
+        <radio color='#4993fa' checked='{{recommandChecked}}' bindtap='recommandRadioOntap'></radio>
+      </view>
+    </view>
+    <view wx:if='{{randomChecked}}' class='public-item'>
+      <text class='public-name'>选择出题数量</text>
+      <view class='select-component'>
+        <view class='sub-button' bindtap='subOntap'>-</view>
+        <input class='select-num' value='{{ select.num }}' />
+        <view class='add-button' bindtap='addOntap'>+</view>
+      </view>
+    </view>
+    <radio-group wx:if='{{recommandChecked}}' bindchange='recommandOnchanged'>
+      <view class='public-item' wx:for='{{questionlist}}'>
+        <text class='public-name'>{{item.name}}</text>
+        <view class='radio-box'>
+          <radio color='#4993fa' value='{{item.id}}' wx:if='{{item.id == questionNum}}' checked='true'></radio>
+          <radio color='#4993fa' value='{{item.id}}' wx:if='{{item.id != questionNum}}'></radio>
+        </view>
+      </view>
+    </radio-group>
+  </view>
+
+  <view class='public-container'>
+    <view class='public-item'>
+      <text class='public-name'>发布到</text>
+    </view>
+
+    <view class='public-clazzlist'>
+      <radio-group bindchange='classRadioOnchanged'>
+        <block wx:for='{{clazzlist}}'>
+          <view class='public-clazz'>
+            <view class='public-clazz-left'>
+              <image class='public-clazz-avatar'></image>
+              <view class='public-clazz-info'>
+                <text>{{item.class_name}}</text>
+                <text>六年级</text>
+              </view>
+            </view>
+            <view class='public-clazz-right'>
+              <view class='radio-box'>
+                <radio color='#4993fa' value='{{item.id}}' data-index='{{index}}' bindtap='classRadioOntap' />
+              </view>
+            </view>
+          </view>
+        </block>
+      </radio-group>
+    </view>
+  </view>
+
+  <view class='public-container-button'>
+    <button bindtap='previewOntap'>预览</button>
+    <button bindtap='publicOntap'>发布</button>
+  </view>
+</view>
+</block>
+
+<block wx:if='{{pageVisible.previewPage}}'>
+<!--pages/preview/preview.wxml-->
+<view class='preview-container'>
+  <view class='question-type'>选择题({{questionIndex+1}}/{{questionlists.length}})</view>
+  <view class='quesetion-box'>
+    <view class='quesetion-title-box'>
+      <text class='question-title'>{{ questionlists[questionIndex].title }}</text>
+      <text class='question-change' bindtap='nextQuestionOntap'>下一题</text>
+    </view>
+    <view class='question-option-box'>
+      <text class='question-option'>{{ questionlists[questionIndex].A }}</text>
+      <text class='question-option'>{{ questionlists[questionIndex].B }}</text>
+      <text class='question-option'>{{ questionlists[questionIndex].C }}</text>
+      <text class='question-option'>{{ questionlists[questionIndex].D }}</text>
+    </view>
+    <view class='question-select-box'>
+      <view class='question-select-item active' wx:if='{{ questionlists[questionIndex].answer == "A" }}'>
+        <text>A</text>
+        <text>{{ questionlists[questionIndex].A }}</text>
+      </view>
+      <view class='question-select-item' wx:if='{{ questionlists[questionIndex].answer != "A" }}'>
+        <text>A</text>
+        <text>{{ questionlists[questionIndex].A }}</text>
+      </view>
+
+      <view class='question-select-item active' wx:if='{{ questionlists[questionIndex].answer == "B" }}'>
+        <text>B</text>
+        <text>{{ questionlists[questionIndex].B }}</text>
+      </view>
+      <view class='question-select-item' wx:if='{{ questionlists[questionIndex].answer != "B" }}'>
+        <text>B</text>
+        <text>{{ questionlists[questionIndex].B }}</text>
+      </view>
+
+      <view class='question-select-item active' wx:if='{{ questionlists[questionIndex].answer == "C" }}'>
+        <text>C</text>
+        <text>{{ questionlists[questionIndex].C }}</text>
+      </view>
+      <view class='question-select-item' wx:if='{{ questionlists[questionIndex].answer != "C" }}'>
+        <text>C</text>
+        <text>{{ questionlists[questionIndex].C }}</text>
+      </view>
+
+      <view class='question-select-item active' wx:if='{{ questionlists[questionIndex].answer == "D" }}'>
+        <text>D</text>
+        <text>{{ questionlists[questionIndex].D }}</text>
+      </view>
+      <view class='question-select-item' wx:if='{{ questionlists[questionIndex].answer != "D" }}'>
+        <text>D</text>
+        <text>{{ questionlists[questionIndex].D }}</text>
+      </view>
+
+    </view>
+    <view class='question-level-box'>
+      <text>难度：★☆☆☆☆</text>
+      <text> | </text>
+      <text>出过：429次</text>
+      <text>正确率：74.7%</text>
+    </view>
+  </view>
+  <button class='public-button' bindtap='returnOntap'>返回</button>
+</view>
+
+</block>

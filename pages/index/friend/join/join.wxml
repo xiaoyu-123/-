@@ -1,0 +1,40 @@
+<!--pages/index/friend/join/join.wxml-->
+<image src='{{imgUrl}}/images/friend_solo.jpg' class='bg' bindtap='ceshi'></image>
+<view class='tip' wx:if='{{match==false}}'>等待对手加入...</view>
+<view class='f1 f'>
+  <view class='bor'>
+    <image src='{{userInfo.avatarUrl}}'></image>
+  </view>
+  <view class='name'>{{userInfo.nickname}}</view>
+  <view class='room'>班级</view>
+</view>
+<!-- <view class='f1 f'>
+  <view class='bor'>
+    <image src='http://wx.qlogo.cn/mmhead/VNDQtnw16icIreibpAhNlNIOpgoehtmFJKUeNnVtROVKy5cUSFnHyr1A/132'></image>
+  </view>
+  <view class='name'>名字</view>
+  <view class='room'>班级</view>
+</view> -->
+<view class='f2 f' bindtap='ceshi2'>
+  <view class='bor'>
+    <image wx:if='{{match!=false}}' src='{{partnerInfo.avatarUrl}}'></image>
+  </view>
+  <view class='name'>{{partnerInfo.nickname}}</view>
+  <view class='room'>班级</view>
+</view>
+<!--图标  -->
+<view class='ion' wx:if='{{match==false}}'>
+  <view bindtap='leave'>
+    <image src='{{imgUrl}}/images/friend_leave.png'></image>
+    <view>离开</view>
+  </view>
+  <view bindtap='share'>
+    <image src='{{imgUrl}}/images/friend_share.png'></image>
+    <view>分享</view>
+  </view>
+
+</view>
+<view class='ion' wx:if='{{match==true}}'>
+  <button bindtap='startsoloOntap'>开始</button>
+
+</view>

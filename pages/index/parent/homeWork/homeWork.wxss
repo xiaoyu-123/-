@@ -1,0 +1,27 @@
+/* pages/index/parent/homeWork/homeWork.wxss */
+.subject{
+  padding: 20rpx 30rpx;
+}
+.subject .content{
+  background: #fff;
+  border-radius: 8px;
+  padding: 50rpx;
+  font-size: 24rpx;
+  color: #494949;
+  margin-bottom: 10rpx;
+}
+page{
+  background: #F9F9F9;
+}
+.subject .sub_name{
+  color: #A6A6A6;
+  margin: 20rpx 0;
+  font-size: 28rpx;
+}
+.content>view{
+  display: flex;
+  justify-content: space-between;
+}
+.content>view:first-child{
+  margin-bottom: 50rpx;
+}

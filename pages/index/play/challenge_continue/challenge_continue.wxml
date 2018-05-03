@@ -1,0 +1,79 @@
+<!--pages/index/play/challenge_continue/challenge_continue.wxml-->
+<view class="conatiner">
+  <view class='bg'><image src='{{imgUrl}}/images/challenge1-3.jpg'/></view>
+  <view class='content'>
+        <view class='headPortrait'><image src='{{imgUrl}}/images/challenge1-2.png'/></view>
+        <view class='headName'><text>人生若只如初见</text></view>
+        <view class='headCalss'><text>八年级一班</text></view>
+        <view class='challengeMesg'>
+          <view class='numbers'> <view class='title'>挑战总次数</view><text>1000次</text></view> 
+          <view class='numbers'> <view class='title paiM'>排名</view><text>856次</text></view>
+          <view class='numbers'> <view class='title win'>胜利次数</view><text>30次</text></view>
+          <view class='numbers'> <view class='title lose'>失败次数</view><text>20次</text></view>   
+        </view>
+        <view class='challenge_pass'>
+            <view class='challenge_content'>
+                <view class='challenge_center'>
+                    <view class='center_left'>
+                      <image src='{{imgUrl}}/images/challenge1-5.png'/>
+                    </view>
+                    <view class='center_center'>
+                      <view class='first'>第2关</view>
+                      <view class='second'>正数与负数</view>
+                      <view class='last'>您在本关的排名第13位</view>
+                    </view>
+                    <view class='btnChallenge'>
+                        <view class='challenge_star'><image src='{{imgUrl}}/images/challenge1-4.png'/></view>
+                        <view class='challenge_star T'><image src='{{imgUrl}}/images/challenge1-4.png'/></view>
+                        <view class='challenge_star S'><image src='{{imgUrl}}/images/challenge1-4.png'/></view>
+                        <button bindtap='btnClick'>挑战</button>
+                    </view>
+                </view>
+            </view>
+             <view class='challenge_content'>
+                <view class='challenge_center'>
+                    <view class='center_left'>
+                      <image src='{{imgUrl}}/images/challenge1-5.png'/>
+                    </view>
+                    <view class='center_center'>
+                      <view class='first'>第3关</view>
+                      <view class='second'>正数与负数</view>
+                      <view class='last'>您在本关的排名第13位</view>
+                    </view>
+                    <view class='btnChallenge'>
+                        <view class='challenge_star'><image src='{{imgUrl}}/images/challenge1-4.png'/></view>
+                        <view class='challenge_star T'><image src='{{imgUrl}}/images/challenge1-6.png'/></view>
+                        <view class='challenge_star S'><image src='{{imgUrl}}/images/challenge1-6.png'/></view>
+                        <button>挑战</button>
+                    </view>
+                </view>
+            </view>
+               <view class='challenge_content last_conten'>
+                <view class='challenge_center last_center'>
+                    <view class='center_left'>
+                      <image src='{{imgUrl}}/images/challenge1-8.png'/>
+                    </view>
+                    <view class='center_center last_center_center'>
+                      <view class='first'>第4关</view>
+                      <view class='second'>正数与负数</view>
+                      <view class='last last_last'></view>
+                    </view>
+                    <view class='btnChallenge last_btnChalenge'>
+                        <view class='challenge_star'><image src='{{imgUrl}}/images/challenge1-6.png'/></view>
+                        <view class='challenge_star T'><image src='{{imgUrl}}/images/challenge1-6.png'/></view>
+                        <view class='challenge_star S'><image src='{{imgUrl}}/images/challenge1-6.png'/></view>
+                    </view>
+                    <view class='suo'><image src='{{imgUrl}}/images/challenge1-1.png'/></view>
+                </view>
+            </view>
+        </view>     
+  </view>
+  <view class='footer_circle'>
+    <view class='circle_one'></view>
+    <view class='circle_two'></view>
+    <view class='circle_three'></view>
+    <view class='circle_four'></view>
+  </view>
+</view>
+
+

@@ -1,0 +1,45 @@
+<!--pages/index/friend/solo/solo.wxml-->
+<view class='bg' bindtap='result'>
+<image src='{{imgUrl}}/images/win_bg.png' class='win_bg'></image>
+  <view class='head'>
+    <view class='green c'>
+      <view>
+        <image src='{{imgUrl}}/images/1.jpg'></image>
+      </view>
+      <view class='info'>
+        <view>444</view>
+        <view class='sj'>03:56</view>
+        <view class='right'>答对5题</view>
+      </view>
+    </view>
+    <view class='time'>
+      <image src='{{imgUrl}}/images/win.png' wx:if='{{win==true}}'></image>
+    </view>
+    <view class='pink c'>
+      <view class='cl'>
+        <image src='{{imgUrl}}/images/1.jpg'></image>
+      </view>
+      <view class='info'>
+        <view>444</view>
+        <view class='sj'>03:56</view>
+        <view class='right'>答对5题</view>
+      </view>
+    </view>
+  </view>
+  <!--  -->
+  <view class='award'>
+    <view>
+      <image src='{{imgUrl}}/images/exp.png'></image>
+      +10
+    </view>
+    <view>
+      <image src='{{imgUrl}}/images/gbig.png'></image>
+       1
+    </view>
+    <view class='continue'>
+      继续对战
+    </view>
+    <view class='share'>炫耀成绩</view>
+    <view class='tip'>分享到微信，可得30 <image src='{{imgUrl}}/images/award.png'></image></view>
+  </view>
+</view>

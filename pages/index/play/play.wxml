@@ -1,0 +1,47 @@
+<!--pages/index/play/play.wxml-->
+
+<view class="conatiner">
+  <view class='header'>
+    <view class='topBanner'>
+      <view class='topBanner_left'>教材</view>
+      <view class='topBanner_right' bindtap='selBook'><view class='right_book'>{{publisher.publisher.name}} {{publisher.name}}</view><view class='right_img'><image src='{{imgUrl}}/images/challenge1-18.png'/></view></view>
+    </view> 
+    <view class='header_title'>
+      <view class='title_bg'><image src='{{imgUrl}}/images/challenge1-17.png'/></view>
+      <view class='title_word'><view>{{Title}}</view></view>
+    </view>
+  </view>
+  <view class='content'>
+        <view class='challenge_pass'>
+            <view class='challenge_content' wx:for="{{oList}}" wx:key="index" wx:for-item="oStr">
+                <view class='challenge_center'>
+                    <view class='center_left'>
+                      <image src='{{imgUrl}}/images/challenge1-5.png'/>
+                    </view>
+                    <view class='center_center'>
+                      <view class='first'>{{oStr.name}}</view>
+                      <view class='second'>{{oStr.description}}</view>
+                        <view wx:if="{{oStr.checkpoint.is_success=='1'}}" class='last'>您在本关的排名第13位</view>  
+                      <view wx:if="{{oStr.chuang}}" class='last last_last last_chuangguan' bindtap='pass' data-id='{{oStr.id}}'>闯关</view> 
+                       
+                    </view>
+                    <view class='btnChallenge'>
+                        <view class='challenge_star'><image src='{{imgUrl}}/images/challenge1-4.png'/></view>
+                        <view class='challenge_star T'><image src='{{imgUrl}}/images/challenge1-4.png'/></view>
+                        <view class='challenge_star S'><image src='{{imgUrl}}/images/challenge1-4.png'/></view>
+                        <image class='key_suo' wx:if="{{oStr.checkpoint.is_success=='0'&&!oStr.chuang}}" src='{{imgUrl}}/images/challenge1-1.png'/>
+                        <button wx:if="{{oStr.checkpoint.is_success=='1'}}" bindtap='challenge' data-id='{{oStr.id}}'>挑战</button>
+                    </view>
+                </view>
+            </view>
+             
+        </view>     
+  </view>
+</view>
+<view class='footer_circle'>
+    <view class='circle_one'></view>
+    <view class='circle_two'></view>
+    <view class='circle_three'></view>
+    <view class='circle_four'></view>
+    <view class='wenhao'><image src='{{imgUrl}}/images/challenge1-19.png'/></view>
+</view>

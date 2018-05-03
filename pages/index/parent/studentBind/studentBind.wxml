@@ -1,0 +1,14 @@
+<view class='container'>
+  <image src='{{imgUrl}}/images/toTeacher.png' class='bg'></image>
+  <view class='top'>
+    <text>学生号</text>
+    <image src='{{imgUrl}}/images/bindstu_top.png'></image>
+    <input value='{{serial_number}}' bindinput='serial_number'></input>
+  </view>
+  <view class='tips'>温馨提示：学生号在学生端个人信息页面，学生号由7位数字组成。</view>
+  <view class='bottom'>
+    <text>您还可以使用微信扫一扫功能扫描孩子分享的个人页面的二维码直接绑定。也可以点击孩子发出的家长邀请链接进行直接登录。</text>
+    <image src='{{imgUrl}}/images/bindstu_bottom.png'></image>
+  </view>
+  <view class='button' bindtap='btnClick'>确认绑定</view>
+</view>

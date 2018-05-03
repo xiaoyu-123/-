@@ -1,0 +1,115 @@
+<!--pages/doHomework/doHomework.wxml-->
+<view class='dohomework-container'>
+  <view wx:if='{{pageVisible.question||pageVisible.answer_card}}' class='topbar-box'>
+    <view wx:if='{{pageVisible.question}}' class='topbar-left'>
+      <text>{{Index+1}}</text>
+      <text>/{{list.length}}</text>
+    </view>
+    <view class='topbar-center'>
+      <text>06月02日 有理数</text> 
+      <text wx:if='{{pageVisible.question}}'>{{timer.time}}</text>
+    </view>
+    <view wx:if='{{pageVisible.question}}' class='topbar-right'>
+      <view bindtap='answerCardOntap'>答题卡</view>
+    </view>
+  </view>
+
+  <view wx:if='{{pageVisible.question||pageVisible.answer_card}}' class='dh-questionbox'>
+    <block  wx:if='{{pageVisible.question}}'>
+    <view class='dh-questionbox-title'>选择题</view>
+    <view class='question'>
+      <view class='question-title'>{{arr.title}}</view>
+      <view class='question-option'>A、{{arr.A}}</view>
+      <view class='question-option'>B、{{arr.B}}</view>
+      <view class='question-option'>C、{{arr.C}}</view>
+      <view class='question-option'>D、{{arr.D}}</view>
+    </view>
+    <view class='options'>
+      <view class='options-item {{cont==1?"options-selected":""}}'  data-id="1" bindtap='choose' data-text="A">
+        <view>A</view>
+        <view>{{arr.A}}</view>
+      </view>
+      <view class='options-item {{cont==2?"options-selected":""}}' data-id="2" bindtap='choose' data-text="B">
+       <!-- options-selected -->
+        <view>B</view>
+        <view>{{arr.B}}</view>
+      </view>
+      <view class='options-item {{cont==3?"options-selected":""}}'data-id="3"  bindtap='choose' data-text="C">
+        <view>C</view>
+        <view>{{arr.C}}</view>
+      </view>
+      <view class='options-item {{cont==4?"options-selected":""}}'data-id="4"  bindtap='choose' data-text="D">
+        <view>D</view>
+        <view>{{arr.D}}</view>
+      </view>
+    </view>
+    </block>
+
+    <block  wx:if='{{pageVisible.answer_card}}'>
+    <view class='answercard-box'>
+      <text>单选</text>
+      <!-- answercard-box-item-select -->
+      <view class='answercard-box-item wx:if="{{question==1?"":"answercard-box-item-select"}}"'data-id="{{answer_id}}" wx:for="{{list}}">{{answer_}}</view>
+    </view>
+    </block>
+  </view>
+
+  <view wx:if='{{pageVisible.answer_card}}' class='dh-submit-box'>
+    <button bindtap='acSubmitOntap'>提交作业</button>
+    <button bindtap='returnToAnswer'>返回</button>
+  </view>
+
+  <block wx:if='{{pageVisible.answer_result}}'>
+  <view class='answerResult-top'>
+    <view class='info-panel'>
+      <text>06月02日 正数和负数</text>
+      <text>答对数（题）</text>
+      <text>6</text>
+      <text>共18题</text>
+      <view>
+        <view>
+          <text>耗时</text>
+          <text>{{timer.time}}</text>
+        </view>
+        <view>
+          <text>正确率</text>
+          <text>88%</text>
+        </view>
+        <view>
+          <text>班级正确率</text>
+          <text>78%</text>
+        </view>
+      </view>
+    </view>
+    <view class='button-panel'>
+      <button>6道错题可重做</button>
+      <button>闯关赚金币</button>
+    </view>
+  </view>
+  <view class='answer-card-result'>
+    <view class='acr-title'>
+      <text>答题卡</text>
+      <view>
+        <text>正确</text>
+        <view></view>
+        <text>错误</text>
+        <view></view>
+      </view>
+    </view>
+    <view class='acr-content'>
+      <text>单选</text>
+      <view class='right'>1</view>
+      <view class='error'>1</view>
+      <view class='right'>1</view>
+      <view class='error'>1</view>
+      <view class='right'>1</view>
+      <view class='error'>1</view>
+      <view class='right'>1</view>
+      <view class='error'>1</view>
+      <view class='right'>1</view>
+      <view class='error'>1</view>
+    </view>
+    <button class='view-parsing'>查看解析</button>
+  </view>
+  </block>
+</view>

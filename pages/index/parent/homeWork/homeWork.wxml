@@ -1,0 +1,14 @@
+<!--pages/index/parent/homeWork/homeWork.wxml-->
+<view class='subject'>
+  <view class='sub_name'>数学</view>
+  <view class='content'wx:for='{{list}}'>
+    <view>
+      <view>作业名称</view>
+      <view>{{item.description}}</view>      
+    </view>
+    <view>
+      <view>布置时间</view>
+      <view>{{item.created_at}}</view>      
+    </view>
+  </view>
+</view>

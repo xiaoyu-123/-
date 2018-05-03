@@ -1,0 +1,79 @@
+<!--pages/index/teacher/clazzEdit/clazzEdit.wxml-->
+<view class='homepage-class'>
+  <view class='tabbar'>
+    <view class='{{pageClasses.clazz}}' bindtap='clazzOntap'>班级信息</view>
+    <view class='{{pageClasses.stulist}}' bindtap='stulistOntap'>班级成员</view>
+    <view class='{{pageClasses.homework}}' bindtap='homeworkOntap'>作业情况</view>
+  </view>
+  <view class='homepage-container' wx:if='{{pageVisible.clazz}}'>
+    <view class='homepage-item'>
+      <view>头像</view>
+      <image class='class-avatar' src='{{classinfo.avatarUrl}}' />
+    </view>
+    <view class='homepage-item'>
+      <view>班级名称</view>
+      <view>
+        <input value='{{clazzName}}' style='text-align:right;' bindinput='clazzNameOninput' />
+      </view>
+    </view>
+    <view class='homepage-item'>
+      <view>班级群号</view>
+      <view>{{classinfo.class_number}}</view>
+    </view>
+    <view class='homepage-item'>
+      <view>创建时间</view>
+      <view>{{classinfo.created_at}}</view>
+    </view>
+    <button class='save' bindtap='saveOntap' disabled='{{!ischanged}}'>保存</button>
+  </view>
+  <view class='stulist-container' wx:if='{{pageVisible.stulist}}'>
+    <view class='stulist-topbar'>
+      <view>全部</view>
+      <view bindtap='editOntap'>编辑</view>
+    </view>
+    <view class='stulist'>
+      <view wx:for='{{studentlist}}'>
+        <image src='{{item.avatarUrl}}' />
+        <view>test</view>
+        <text wx:if='{{deleteMode}}' data-stuid='{{item.id}}' bindtap='deleteOntap'>×</text>
+      </view>
+    </view>
+  </view>
+  <view class='homepage-container' wx:if='{{pageVisible.homework}}'>
+    <view class='homepage-item-homework '>
+      <view>
+        <view>4.26作业</view>
+        <view>2018-04-29</view>
+      </view>
+      <view>></view>
+    </view>
+    <view class='homepage-item-homework '>
+      <view>
+        <view>4.26作业</view>
+        <view>2018-04-29</view>
+      </view>
+      <view>></view>
+    </view>
+    <view class='homepage-item-homework '>
+      <view>
+        <view>4.26作业</view>
+        <view>2018-04-29</view>
+      </view>
+      <view>></view>
+    </view>
+    <view class='homepage-item-homework '>
+      <view>
+        <view>4.26作业</view>
+        <view>2018-04-29</view>
+      </view>
+      <view>></view>
+    </view>
+    <view class='homepage-item-homework '>
+      <view>
+        <view>4.26作业</view>
+        <view>2018-04-29</view>
+      </view>
+      <view>></view>
+    </view>
+  </view>
+</view>

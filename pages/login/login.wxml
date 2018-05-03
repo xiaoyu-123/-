@@ -1,0 +1,49 @@
+<view class='wrapper'>
+  <view class='bg'><image src='{{imgUrl}}/images/login1-1.png'></image></view>
+  <view class='content'>
+    <view class='content_bg'><image src='{{imgUrl}}/images/login1-3.png'></image></view>
+    <view class='content_title'>每日登陆奖励</view>
+    <view class='content_item'>
+      <view class='item_item'>
+        <view class='item_title'>金币×100</view>
+        <view class='item_img'><image src='{{imgUrl}}/images/login1-2.png'></image></view>
+        <view class='item_day'>第1天</view>
+      </view>
+      <view class='item_item'>
+        <view class='item_title'>金币×100</view>
+        <view class='item_img'><image src='{{imgUrl}}/images/login1-2.png'></image></view>
+        <view class='item_day'>第2天</view>
+      </view>
+      <view class='item_item  last'>
+        <view class='item_title'>金币×100</view>
+        <view class='item_img'><image src='{{imgUrl}}/images/login1-2.png'></image></view>
+        <view class='item_day'>第3天</view>
+      </view>
+    </view>
+    <view class='content_item'>
+      <view class='item_item'>
+        <view class='item_title'>金币×100</view>
+        <view class='item_img'><image src='{{imgUrl}}/images/login1-2.png'></image></view>
+        <view class='item_day'>第4天</view>
+      </view>
+      <view class='item_item'>
+        <view class='item_title'>金币×100</view>
+        <view class='item_img'><image src='{{imgUrl}}/images/login1-2.png'></image></view>
+        <view class='item_day'>第5天</view>
+      </view>
+      <view class='item_item  last'>
+        <view class='item_title'>金币×100</view>
+        <view class='item_img'><image src='{{imgUrl}}/images/login1-2.png'></image></view>
+        <view class='item_day'>第6天</view>
+      </view>
+    </view>
+    <view class='content_item'>
+      <view class='item_item last_last'>
+        <view class='item_title'>金币×100</view>
+        <view class='item_img'><image src='{{imgUrl}}/images/login1-2.png'></image></view>
+        <view class='item_day'>第7天</view>
+      </view>
+    </view>
+    <button bindtap='btnClick'>领取</button>
+  </view>
+</view>

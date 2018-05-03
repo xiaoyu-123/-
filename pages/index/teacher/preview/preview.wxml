@@ -1,0 +1,61 @@
+<!--pages/preview/preview.wxml-->
+<view class='preview-container'>
+  <view class='question-type'>选择题({{questionIndex+1}}/{{questionlist.length}})</view>
+  <view class='quesetion-box'>
+    <view class='quesetion-title-box'>
+      <text class='question-title'>{{ questionlist[questionIndex].title }}</text>
+      <text class='question-change' bindtap='nextQuestionOntap'>下一题</text>
+    </view>
+    <view class='question-option-box'>
+      <text class='question-option'>{{ questionlist[questionIndex].A }}</text>
+      <text class='question-option'>{{ questionlist[questionIndex].B }}</text>
+      <text class='question-option'>{{ questionlist[questionIndex].C }}</text>
+      <text class='question-option'>{{ questionlist[questionIndex].D }}</text>
+    </view>
+    <view class='question-select-box'>
+      <view class='question-select-item active' wx:if='{{ questionlist[questionIndex].answer == "A" }}'>
+        <text>A</text>
+        <text>{{ questionlist[questionIndex].A }}</text>
+      </view>
+      <view class='question-select-item' wx:if='{{ questionlist[questionIndex].answer != "A" }}'>
+        <text>A</text>
+        <text>{{ questionlist[questionIndex].A }}</text>
+      </view>
+
+      <view class='question-select-item active' wx:if='{{ questionlist[questionIndex].answer == "B" }}'>
+        <text>B</text>
+        <text>{{ questionlist[questionIndex].B }}</text>
+      </view>
+      <view class='question-select-item' wx:if='{{ questionlist[questionIndex].answer != "B" }}'>
+        <text>B</text>
+        <text>{{ questionlist[questionIndex].B }}</text>
+      </view>
+
+      <view class='question-select-item active' wx:if='{{ questionlist[questionIndex].answer == "C" }}'>
+        <text>C</text>
+        <text>{{ questionlist[questionIndex].C }}</text>
+      </view>
+      <view class='question-select-item' wx:if='{{ questionlist[questionIndex].answer != "C" }}'>
+        <text>C</text>
+        <text>{{ questionlist[questionIndex].C }}</text>
+      </view>
+
+      <view class='question-select-item active' wx:if='{{ questionlist[questionIndex].answer == "D" }}'>
+        <text>D</text>
+        <text>{{ questionlist[questionIndex].D }}</text>
+      </view>
+      <view class='question-select-item' wx:if='{{ questionlist[questionIndex].answer != "D" }}'>
+        <text>D</text>
+        <text>{{ questionlist[questionIndex].D }}</text>
+      </view>
+
+    </view>
+    <view class='question-level-box'>
+      <text>难度：★☆☆☆☆</text>
+      <text> | </text>
+      <text>出过：429次</text>
+      <text>正确率：74.7%</text>
+    </view>
+  </view>
+  <button class='public-button' bindtap='returnOntap'>返回</button>
+</view>

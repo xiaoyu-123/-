@@ -1,0 +1,181 @@
+/* pages/index/shop/shop.wxss */
+
+page {
+  height: 100%;
+}
+
+.bg {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(87, 204, 242, 1)), to(rgba(53, 135, 237, 1)));
+  width: 100%;
+  height: 100%;
+}
+
+.bg_p {
+  position: absolute;
+  top: 6%;
+  left: 0;
+  width: 170%;
+  height: 94%;
+}
+
+.box {
+  border: 11px solid #4345b1;
+  border-radius: 22px;
+  background: #fff;
+  position: absolute;
+  top: 9%;
+  width: 90%;
+  left: 5%;
+  height: 82%;
+  box-sizing: border-box;
+}
+
+.top {
+  background: #ffed45;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.top>image {
+  position: absolute;
+  width: 350rpx;
+  height: 280rpx;
+  top: -22rpx;
+  left: -34rpx;
+}
+
+.top view image {
+  width: 214rpx;
+  height: 114rpx;
+  margin: 20rpx 0;
+  display: block;
+}
+
+.top view {
+  margin-left: 59%;
+  text-align: center;
+}
+
+.top text {
+  font-size: 32rpx;
+  color: #fff;
+  background: #9c59dd;
+  border-radius: 50rpx;
+  padding: 0 20rpx;
+}
+
+.top {
+  height: 240rpx;
+  border-radius: 30rpx;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.money>view {
+  width: 27.3%;
+  padding: 3%;
+  font-size: 24rpx;
+  color: #9c59dd;
+  text-align: center;
+  float: left;
+}
+
+.money view .num {
+  color: #fff;
+  padding: 0 10rpx;
+  background: #9c59dd;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.money view image {
+  width: 100rpx;
+  height: 85rpx;
+  margin: 20rpx 0 0;
+}
+
+.money {
+  margin-top: 12%;
+}
+
+.money::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+button {
+  margin: 11% 8%;
+  color: #fff;
+  background: #9c59dd;
+  border-radius: 5px;
+}
+
+/*modal  */
+
+.modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+}
+
+.modal .dialog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -205rpx;
+  text-align: center;
+  z-index: 50;
+  background: #fff;
+  border-radius: 5px;
+  width: 410rpx;
+  margin-top:-300rpx;
+
+}
+
+.modal .head {
+  width: 140rpx;
+  height: 118rpx;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  margin-top: -61rpx;
+  background: #fff;
+}
+.dialog{
+  position: relative;
+}
+.close{
+  position:absolute;
+top:-14rpx;
+right:13rpx;
+font-size:68rpx;
+color: #EB6100;
+}
+.m_bg{
+  color: #fff;
+  background: #478ACA;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  padding: 15rpx;
+}
+.huo{
+  font-size: 30rpx;
+  margin: 80rpx auto;
+}
+.buy{
+  padding: 10rpx 30rpx;
+  color: #fff;
+  font-size: 34rpx;
+  margin: 50rpx auto;
+  background: #EB6100;
+  border-radius: 5px;
+
+}
+.dialog{
+  height: 500rpx;
+}

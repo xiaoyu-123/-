@@ -1,0 +1,84 @@
+<!--pages/index/userInfo/userInfo.wxml-->
+<view class='bg'>
+  <image src='{{imgUrl}}/images/shop_bg.png' class='bg_p'></image>
+  <view class='head'>
+    <image src='{{list.avatarUrl}}'></image>
+    <view class='name'>{{userInfo.nickName}}</view>
+  </view>
+  <view class='info'>
+    <view>
+      <view>用户ID：{{list.serial_number}}</view>
+      <view class='copy'>点击复制分享给家长</view>
+    </view>
+    <view>
+      <view>闯关总场次：{{list.checkpoint.number}}</view>
+      <view>闯关星星数：{{list.checkpoint.stars}}</view>
+    </view>
+    <view>
+      <view>挑战总场次：{{list.ranking.challenge_number}}</view>
+      <view>挑战胜场数：{{list.ranking.success_number}}</view>
+    </view>
+    <view>
+      <view>班级排名：54</view>
+      <view>经验值：{{list.experience}}</view>
+    </view>
+    <view>
+      <view>等级：{{list.level}}</view>
+      <view>称号：{{list.the_title}}</view>
+    </view>
+    <view>
+      <view>姓名：{{list.name}}</view>
+      <view>性别：{{list.sex}}</view>
+    </view>
+    <view>
+      <view>生日：{{newbirthday}}</view>
+      <view>年级：{{list.grade}}</view>
+    </view>
+    <view>
+      <view style='width:100%;'>所在学校：{{list.school_name}}</view>
+    </view>
+    <button bindtap='modifi'>修改信息</button>
+
+  </view>
+  <view class='share'>
+    <button open-type='share'><image src='{{imgUrl}}/images/share.png'></image></button>
+    <view>分享到其他群</view>  
+  </view>
+</view>
+<!--修改信息  -->
+<view class='modal' wx:if='{{show==true}}'>
+  <image src='{{list.avatarUrl}}'></image>
+  <form bindsubmit='modify'>
+    <view>
+      <label>姓名：</label>
+      <input value='{{name}}' bindinput='name'></input>
+    </view>
+    <view>
+      <label>性别：</label>
+      <picker mode='selector' range='{{sex}}' value='{{sex_i}}' bindchange='sex'>
+        <text>{{sex_i}}</text>
+      </picker>
+    </view>
+    <view>
+      <label>生日：</label>
+      <picker mode='date' value='{{date}}' bindchange='date'>
+        <text>{{date}}</text>
+      </picker>
+    </view>
+    <view>
+      <label>年级：</label>
+      <picker mode='selector' range='{{clas}}'  range-key='text' value='{{clas_i}}' bindchange='clas'>
+        <text>{{clas_i}}</text>
+      </picker>
+    </view>
+    <view>
+      <label>地区：</label>
+       <picker mode='region' value='{{region}}' bindchange='regin'>{{region}}</picker>
+    </view>
+    <view>
+      <label>学校：</label>
+      <input value='{{school_name}}' bindinput='school'></input>
+    </view>
+    <button form-type='submit'>确认修改</button>
+  </form>
+</view>

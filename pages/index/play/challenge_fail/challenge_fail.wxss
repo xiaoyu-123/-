@@ -1,0 +1,144 @@
+/* pages/index/play/challenge_fail/challenge_fail.wxss */
+.container{
+  width: 100%;
+  background-color: #6699ff;
+}
+.header{
+  width: 100%;
+  height: 390rpx;
+}
+.header image{
+  width: 100%;
+  height: 100%;
+}
+.center{
+  margin: 0;
+  width: 100%;
+  height: 160rpx;
+  text-align: center;
+}
+.number_top{
+  color: #fff;
+  font-size: 32rpx;
+}
+.number_bottom{
+  color: #fff;
+  font-size:32rpx;
+}
+.center_timer{
+  width: 100%;
+  height: 120rpx;
+  color: #fff;
+}
+.cneter_left{
+  float: left;
+  margin-left: 115rpx;
+}
+.cneter_left .left_one{
+  font-size: 40rpx;
+}
+.cneter_left .left_two{
+  font-size: 30rpx;
+  margin-top: 15rpx;
+}
+.center_center{
+  float: left;
+  margin-left: 100rpx;
+}
+.center_center image{
+  width: 50rpx;
+  height:50rpx;
+}
+.center_bottom{
+  float: right;
+  margin-right: 65rpx;
+}
+.center_center .center_one{
+  font-size: 30rpx;
+}
+.center_center .center_two{
+  font-size: 30rpx;
+  margin-top: 15rpx;
+
+}
+.center_{
+  margin-left: 15rpx;
+  float: left;
+}
+.center_first{
+  font-size: 32rpx;
+}
+.center_second{
+  font-size: 32rpx;
+  margin-left: 5rpx;
+  margin-top: 30rpx;
+}
+.center_bottom .bottom_one{
+  font-size: 40rpx;
+  margin-left: 50rpx;
+}
+.center_bottom .botto_two{
+  margin-top: 15rpx;
+  font-size: 32rpx;
+}
+.btnArr{
+  width: 100%;
+}
+.btnArr button{
+  width: 500rpx;
+  height: 90rpx;
+  margin-top: 55rpx;
+}
+.btnArr .btnOne{
+    background-color: #00cc99;
+    font-size: 36rpx;
+    color: #fff;
+}
+.btnArr .btnTwo{
+  background-color: #fff;
+  color: #3366cc;
+  font-size: 36rpx;
+  position: relative;
+}
+.two-one{
+  position: absolute;
+  left: 212rpx;
+  top:-18rpx;
+  height: 24rpx;
+}
+.two-two{
+  position: absolute;
+  left:170rpx;
+  bottom:-1rpx;
+  font-size: 22rpx;
+}
+.btnTwo .two-two image{
+  width: 26rpx;
+  height: 26rpx;
+  position: absolute;
+  right: -33rpx;
+  top:15rpx;
+}
+.btnArr .btnThree{
+  color: #fff;
+  background-color: #ff9900;
+}
+.btnArr .btnThree .two-one{
+  position: absolute;
+  left: 180rpx;
+  top:-18rpx;
+}
+.btnArr .btnThree .two-two{
+  left:150rpx;
+}
+
+.see{
+  font-size: 26rpx;
+  color: #fff;
+  margin-top: 35rpx;
+  border-bottom: 1px solid #666666;
+}
+.kong{
+  width: 100%;
+  height: 80rpx;
+}

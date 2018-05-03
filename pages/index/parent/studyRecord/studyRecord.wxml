@@ -1,0 +1,41 @@
+<!--pages/index/parent/studyRecord/studyRecord.wxml-->
+<view class='person'>
+  <view class='name'>随风的学习记录</view>
+    <!--底部元  -->
+  <view class='progress_bg'>
+    <!--百分比  -->
+  <canvas style="width: 130px; height: 125px;positon:absolute;top:-5px;left:-5px;" canvas-id="firstCanvas"></canvas>
+    
+    <!-- <view class='progress'> -->
+      <!--文字  -->
+      <view class='progress_content'>
+        <view>{{average}}%</view>
+        <view>平均正确率</view>
+      </view>
+    <!-- </view> -->
+  </view>
+</view>
+<view class='list'>
+  <view>
+    <view>1次</view>
+    <view>作业与比赛</view>
+  </view>
+  <view>
+    <view>0次</view>
+    <view>闯关与挑战</view>
+  </view>
+  <view>
+    <view>0次</view>
+    <view>错题扫除</view>
+  </view>
+</view>
+<view class='list2'wx:for="{{list}}">
+  <view>
+    <image src='/images/l2.png'></image>
+    <view class='bor'>
+      <view class='title'>{{item.description}}</view>
+      <view>作业 56分钟前</view>
+      <view class='true'>{{item.answer*100}}%正确率</view>
+    </view>
+  </view>
+</view>

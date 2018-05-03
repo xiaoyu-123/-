@@ -1,0 +1,16 @@
+<!--pages/index/parent/parent.wxml-->
+<view class='bg'>
+    <image src='{{imgUrl}}/images/shop_bg.png' class='bg_p'></image>
+    <!--头像  -->
+    <view class='head'>
+      <image src='{{imgUrl}}/images/parent_h.png'></image>
+    </view>
+    <view class='content'>
+      <view class='title'>您现在的操作是转换家长的身份</view>
+      <view>1.此次操作不可逆，确定身份之后无法修改。</view>
+      <view>2.家长绑定学生，需要学生号，您可以在孩子的个人信息页面获取学生号。</view>
+      <view>3.您还可以使用微信扫一扫扫描孩子分享个人页面的二维码直接绑定。也可以点击盖子发出家长邀请链接进行直接登录。</view>
+    </view>
+    <button class='confirm' bindtap='confirm'>确 认</button>
+    <button class='cancel'>放 弃</button>
+</view>

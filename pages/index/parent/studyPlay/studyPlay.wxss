@@ -1,0 +1,44 @@
+/* pages/index/parent/studyPlay/studyPlay.wxss */
+.block{
+  margin: 2%;
+  width: 96%;
+}
+page{
+  background: #F9F9F9;
+}
+.block image{
+  width: 100%;
+  height:320rpx;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; 
+}
+.block .content{
+  background: #fff;
+  padding: 2% 3%;
+  font-size: 22rpx;
+  color: #A8A8A8;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10rpx;
+}
+.block .content .title{
+  font-size: 26rpx;
+  color: #494949;
+}
+button{
+  margin: 0;
+  font-size: 26rpx;
+  color: #fff;
+  background: #4B93FA;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 4px;
+  margin-top:7rpx;
+
+}
+.more{
+  margin: 100rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #B9B9B9;
+}

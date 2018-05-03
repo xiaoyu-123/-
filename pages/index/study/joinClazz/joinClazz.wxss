@@ -1,0 +1,94 @@
+/* pages/joinClazz/joinClazz.wxss */
+page{
+  background: #eeeeee;
+}
+
+.search-box{
+  justify-content: center;
+  align-items: center;
+  
+  height: 120rpx;
+}
+.search-box,.joinclazz-item{
+  display: flex;
+  width: 100%;
+  background: #fff;
+}
+.search{
+  border:1px solid #828282;
+  border-radius: 100rpx;
+  font-size: 14px;
+  padding: 5rpx 30rpx;
+  height: 60rpx;
+  width: 550rpx;
+}
+.search-placeholder{
+}
+.search-button{
+  width: 75rpx;
+  height: 44rpx;
+  margin-left: 20rpx;
+  font-size: 14px;
+  color: #828282;
+  text-align: center;
+}
+
+.joinclazz-item{
+  margin-top: 25rpx;
+  
+  height: 150rpx;
+}
+.joinclazz-item-left{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.joinclazz-item-avatar{
+  width: 90rpx;
+  height: 90rpx;
+  background: #dedede;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.joinclazz-item-center{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 14px;
+}
+.joinclazz-item-center>text:nth-child(1){
+  margin-bottom: 10rpx;
+}
+.joinclazz-item-center>text:nth-child(2){
+  color: #767676;
+}
+.joinclazz-item-center>text:nth-child(3){
+  color: #767676;
+}
+.joinclazz-item-right{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.joinclazz-item-right>view{
+  background: #f39800;
+  color: #fff;
+  font-size: 14px;
+  width: 130rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border-radius: 10%;
+  margin-right: 30rpx;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}

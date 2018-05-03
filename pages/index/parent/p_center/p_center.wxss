@@ -1,0 +1,64 @@
+/* pages/index/parent/p_center/p_center.wxss */
+.cover{
+  width: 100%;
+  height: 300rpx;
+  position: relative;
+}
+.cover image{
+  width: 100%;
+  height: 100%;
+}
+.cover text{
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  font-size: 24rpx;
+  color: #fff;
+}
+.head{
+  display: flex;
+  justify-content: center;
+  margin-top:-45rpx;
+z-index:1000000;
+position:relative;
+
+}
+.head image{
+  margin: 0 25rpx;
+  width: 95rpx;
+  height: 95rpx;
+  border-radius: 50%;
+  
+}
+.name{
+  padding: 40rpx 0 20rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #494949;
+  border-bottom: 1px solid #DDDDDD;
+}
+.list>view{
+  display: flex;
+}
+.list view image{
+  width:9%;
+height:66rpx;
+margin:20rpx 3%;
+
+}
+.list view .title{
+  font-size: 30rpx;
+  color: #494949;
+  margin-bottom:8rpx;
+
+}
+.list view{
+  font-size: 22rpx;
+  color: #B1B1B1;
+}
+.list view .bor{
+  border-bottom: 1px solid #DDDDDD;
+  width:85%;
+  padding: 2% 0;
+
+}

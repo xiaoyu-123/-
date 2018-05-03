@@ -1,0 +1,221 @@
+<!--pages/teacher/teacher.wxml-->
+<block wx:if="{{pageVisible.clazz}}">
+  <view class='container'>
+    <view class='clazz'>
+      <view class='clazz-top'>
+        <image src='{{imgUrl}}/images/myclass_bg.png' class='clazz-bg'></image>
+        <view class='bg-mask'></view>
+        <view class='clazz-info'>
+          <view class='info-top'>
+            <view class='info-top-left'>
+              <image class='info-avatar' />
+              <view class='info-box'>
+                <text class='info-name' bindtap='createClazzOntap'>新建班级</text>
+                <text class='info-number'>班群号：900546</text>
+              </view>
+            </view>
+            <view class='info-top-right'>
+              <text>邀请学生</text>
+            </view>
+          </view>
+          <view class='info-bottom'>
+            <view class='info-bottom-left'>
+              <view class='rate'>
+                <text class='rate-number'>0</text>
+                <text class='rate-sign'>%</text>
+              </view>
+              <text class='rate-name'>作业提交率</text>
+            </view>
+            <view class='info-bottom-center'>
+              <view class='rate'>
+                <text class='rate-number'>0</text>
+                <text class='rate-sign'>%</text>
+              </view>
+              <text class='rate-name'>累计题数</text>
+            </view>
+            <view class='info-bottom-right'>
+              <view class='rate'>
+                <text class='rate-number'>0</text>
+                <text class='rate-sign'>%</text>
+              </view>
+              <text class='rate-name'>作业正确率</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='total-homework-container'>
+
+      </view>
+      <view class='question-total'>
+        <text>全部作业  ></text>
+      </view>
+    </view>
+    <block wx:for='{{userdata.class_}}'>
+      <view class='clazz'>
+        <view class='clazz-top'>
+          <image src='{{imgUrl}}/images/myclass_bg.png' class='clazz-bg'></image>
+          <view class='bg-mask'></view>
+          <view class='clazz-info'>
+            <view class='info-top'>
+              <view class='info-top-left' bindtap='classHomepageOntap' data-clazzid='{{item.id}}'>
+                <image class='info-avatar' bindtap='classHomepageOntap' data-clazzid='{{item.id}}' />
+                <view class='info-box'>
+                  <text class='info-name' bindtap='classHomepageOntap' data-clazzid='{{item.id}}'>{{item.class_name}}</text>
+                  <text class='info-number' bindtap='classHomepageOntap' data-clazzid='{{item.id}}'>班群号：{{item.class_number}}</text>
+                </view>
+              </view>
+              <view class='info-top-right'>
+                <text bindtap='inviteStuOntap' data-classNumber='{{item.class_number}}'>邀请学生</text>
+              </view>
+            </view>
+            <view class='info-bottom'>
+              <view class='info-bottom-left'>
+                <view class='rate'>
+                  <text class='rate-number'>0</text>
+                  <text class='rate-sign'>%</text>
+                </view>
+                <text class='rate-name'>作业提交率</text>
+              </view>
+              <view class='info-bottom-center'>
+                <view class='rate'>
+                  <text class='rate-number'>0</text>
+                  <text class='rate-sign'>%</text>
+                </view>
+                <text class='rate-name'>累计题数</text>
+              </view>
+              <view class='info-bottom-right'>
+                <view class='rate'>
+                  <text class='rate-number'>0</text>
+                  <text class='rate-sign'>%</text>
+                </view>
+                <text class='rate-name'>作业正确率</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='total-homework-container'>
+          <view wx:for='{{item.busy_book}}' wx:for-item='busy_item' class='homework'>
+            <view class='homework-top'>
+              <text class='homework-name'>{{busy_item.description}}</text>
+              <text class='homework-name-sign'>/</text>
+              <text>共{{busy_item.number}}题</text>
+            </view>
+            <view class='homework-bottom'>
+              <text>{{busy_item.time}}</text>
+              <text wx:if='{{busy_item.submit_number == item.students[0].count}}'>已全部提交</text>
+              <text wx:if='{{busy_item.submit_number != item.students[0].count}}' bindtap='homeworkOntap'>{{busy_item.submit_number}}/{{ item.students[0].count}}已提交</text>
+            </view>
+          </view>
+        </view>
+        <view class='question-total' data-classid='{{item.id}}' bindtap='questionTotalOntap'>
+          <text data-classid='{{item.id}}'>全部作业  ></text>
+        </view>
+      </view>
+    </block>
+  </view>
+</block>
+
+<block wx:if="{{pageVisible.question}}">
+  <!--pages/question/question.wxml-->
+  <view class='container'>
+    <view class='item-container'>
+      <picker mode='multiSelector' range='{{bookarr}}' range-key='name' bindchange='bookOnchanged' bindcolumnchange='bookcolOnchanged'>
+        <view class='bookinfo-box'>
+          <text class='book-title'>{{booklist[bookselect[0]].name+levellist[bookselect[1]].name}}</text>
+          <text class='book-nav'>选择教材 ></text>
+        </view>
+      </picker>
+    </view>
+    <view wx:if='{{chapterlistready}}' class='item-container'>
+      <block wx:for='{{chapterlist}}' wx:for-item='chapter'>
+        <view class='chapter-container' data-id='{{chapter.id}}' bindtap='chapterOnselected'>
+
+          <text class='chapter-name'>{{chapter.text}}</text>
+          <text class='chapter-nav'> ></text>
+
+        </view>
+
+        <view class='part-container'>
+          <block wx:for='{{sectionlist}}' wx:if='{{chapter.id == item.chapter_id}}'>
+            <view class='part'>
+              <view class='part-left'>
+                <text>{{item.name}}</text>
+                <text class='part-recommend'>精选推荐</text>
+              </view>
+              <view class='part-right'>
+                <text class='part-nav' bindtap='publicOntap' data-secid='{{item.id}}'>快速布置作业 ></text>
+              </view>
+            </view>
+          </block>
+        </view>
+
+      </block>
+    </view>
+  </view>
+
+
+
+
+</block>
+
+<block wx:if="{{pageVisible.user}}">
+  <!--pages/clazz/clazz.wxml-->
+  <view class='container'>
+    <view class='userinfo'>
+      <image class='userinfo-avatar' bindtap='mineOntap'></image>
+      <text class='userinfo-nickname'>{{userdata.name}}</text>
+      <text class='userinfo-school'>{{userdata.school_name}}</text>
+    </view>
+    <view class='sittings'>
+      <image class='sittingIcon' src='{{imgUrl}}/images/sitting.png'></image>
+      <text class='sittingText' bindtap='teacherSittingOntap'>设置</text>
+    </view>
+    <view class='gold'>
+      <image class='goldIcon' src='{{imgUrl}}/images/coin.png'></image>
+      <text class='goldText'>金币</text>
+      <view class="exchange-history" bindtap='exchangedHistoryOntap'>兑换记录</view>
+    </view>
+    <view class='exchange'>
+      <block wx:for='{{shopdata}}'>
+        <view class='item' data-goodsid='{{item.id}}' data-goldnum='{{item.gold_number}}' bindtap='goodsOntap'>
+          <view class='item-img' data-goodsid='{{item.id}}' data-goldnum='{{item.gold_number}}'></view>
+          <view class='item-info' data-goodsid='{{item.id}}' data-goldnum='{{item.gold_number}}'>
+            <view class='item-name' data-goodsid='{{item.id}}' data-goldnum='{{item.gold_number}}'>{{item.name}}</view>
+            <view class='item-price' data-goodsid='{{item.id}}' data-goldnum='{{item.gold_number}}'>
+              <image class='item-price-icon' data-goodsid='{{item.id}}' data-goldnum='{{item.gold_number}}' src='/images/coin.png' />{{item.gold_number}}</view>
+            <view class='item-price-refer' data-goodsid='{{item.id}}' data-goldnum='{{item.gold_number}}'>参考价：{{item.gold_number / 100}}元</view>
+          </view>
+        </view>
+      </block>
+    </view>
+
+    <view class='exchangeHistory' wx:if='{{showExchangeHistory}}'>
+      <view class='title-bar'>
+        <text>兑换记录</text>
+        <view bindtap='closeHistoryOntap'>×</view>
+      </view>
+
+      <scroll-view scroll-y='true' class='exchange-item-container'>
+
+        <view class='exchange-item' wx:for='{{exchangeHistory}}' wx:for-item='history'>
+          <view class='exchange-item-left'>
+            <view>{{history.replacement.name}}</view>
+            <view>{{history.created_at}}</view>
+          </view>
+          <view class='exchange-item-right'>
+
+          </view>
+        </view>
+
+      </scroll-view>
+    </view>
+
+
+  </view>
+</block>
+
+<view class='tabbar'>
+  <view class='{{tabbarActive.clazz}}' bindtap='classButtonOntap'>班级</view>
+  <view class='{{tabbarActive.question}}' bindtap='questionButtonOntap'>出题</view>
+  <view class='{{tabbarActive.user}}' bindtap='userButtonOntap'>我的</view>
+</view>

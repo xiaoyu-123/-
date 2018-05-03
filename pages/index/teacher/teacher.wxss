@@ -1,0 +1,74 @@
+/* pages/index/teacher/teacher.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  position: relative;
+  padding-top: 80rpx;
+}
+.bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.content{
+  position: relative;
+  z-index: 10;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.teacherIcon{
+  width: 300rpx;
+  height: 300rpx;
+}
+.remind{
+  margin-top: 100rpx;
+  color: #fff;
+  font-size: 18px;
+}
+.tips{
+  margin-top: 110rpx;
+  color: #fff;
+  font-size: 14px;
+
+  display: flex;
+  flex-direction: column;
+}
+.tips>text:first-child{
+  margin-bottom: 10rpx;
+}
+
+.button-box{
+  width: 100%;
+  margin-top: 140rpx;
+}
+.button-ok,.button-cancel{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.button-ok>text,.button-cancel>text{
+  color: #fff;
+}
+.button-ok>text:first-child,.button-cancel>text:first-child{
+  margin-right:50rpx;
+}
+.button-ok{
+  background: #2cda9d;
+}
+.button-cancel{
+  background: #ff3e41;
+
+  margin-top: 60rpx;
+}

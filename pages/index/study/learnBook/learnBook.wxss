@@ -1,0 +1,379 @@
+page{
+  margin: 0;
+  padding: 0;
+}
+
+/* learnBook  start */
+/* 教材选择 */
+ .topBanner{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #3399cc;
+  position:absolute;
+  left: 0;
+  top: 0rpx;
+  z-index: 999;
+}
+.topBanner_left{
+  float: left;
+  font-size: 30rpx;
+  color: #fff;
+  margin-left: 28rpx;
+}
+.topBanner_right{
+  float: right;
+  font-size: 30rpx;
+  color: #fff;
+  position: relative;
+}
+ .topBanner_right .right_book{
+   margin-right: 65rpx;
+   width: 260rpx;
+ }
+.topBanner_right .right_img{
+  width: 15rpx;
+  height: 25rpx;
+  position: absolute;
+  top: 0rpx;
+  right: 30rpx;
+
+}
+.topBanner_right .right_img image{
+  width: 100%;
+  height: 100%;
+} 
+.learnBook-container{
+  width: 100%;
+  padding-bottom: 5%;
+  margin-top: 75rpx;
+}
+.bg_learnBook{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.chapter-container{
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #489ce4;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 1170rpx;
+}
+.chapter-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #dff1ea;
+  width: 440rpx;
+  padding: 5% 0;
+  color: #2171b5;
+}
+.chapter-item .items{
+  font-size: 14px;
+  margin-bottom: 20rpx;
+}
+.chapter-item  .item{
+  font-size: 13px;
+  text-align: left;
+  display: block;
+  width: 60%;
+}
+.chapter-item:first-child{
+  
+  margin-top: 100rpx;
+}
+.chapter-item:not(:first-child){
+  margin-top: 50rpx;
+}
+.chapter-item:last-child{
+  margin-bottom: 50rpx;
+}
+.chapter_item_detail{
+  width: 630rpx;
+  height: 630rpx;
+  background: #7ecef4;
+}
+.chapter_item_detail>image{
+  width: 610rpx;
+  height: 610rpx;
+  background: #fff;
+  display: block;
+  margin: 10rpx auto;
+}
+.chapter_item_detail-btnbox{
+  width: 90%;
+}
+.chapter_item_detail-btnbox>button{
+  color: #fff;
+  margin-top: 40rpx;
+}
+.chapter_item_detail-btnbox>button:nth-child(1){
+  background: #f39800;
+}
+.chapter_item_detail-btnbox>button:nth-child(2){
+  background: #0068b7;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.navbar{
+  width: 100%;
+  height: 75rpx;
+  background: #9acafd;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-item{
+  width: 33.33333333333%;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+.navbar-item:not(:first-child){
+  border-left: 1px solid #fff;
+}
+.navbar-active{
+  color: #2171b5;
+}
+/* .learnBook end */
+
+/* exerciseBook start */
+page{
+  height: 100%;
+}
+.noclazz-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.noclazz-container>image{
+  background: orange;
+  margin-top: 75rpx;
+  width: 100%;
+}
+.noclazz-container>text{
+  color: #2171b5;
+  font-size: 14px;
+
+  margin-top: 40rpx;
+}
+.noclazz-container>view{
+  background: #f39800;
+  border-radius: 60rpx;
+  color: #fff;
+  padding: 10rpx 60rpx;
+  
+  margin-top: 40rpx;
+}
+
+.exerciseBook-container,.noclazz-container{
+  background: #fff;
+}
+.search-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120rpx;
+  margin-top: 55rpx;
+}
+.search{
+  background: #e5e5e5;
+  border-radius: 100rpx;
+  font-size: 14px;
+  padding: 5rpx 30rpx;
+  height: 60rpx;
+  width: 570rpx;
+}
+.search-button{
+  width: 44rpx;
+  height: 44rpx;
+  margin-left: 20rpx;
+}
+
+.eb-clazzinfo-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #ddebf5;
+  padding: 3% 0;
+  
+  font-size: 14px;
+}
+.eb-clazzinfo-left{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.eb-clazzinfo-left-icon{
+  width: 71rpx;
+  height: 71rpx;
+  margin-left: 30rpx;
+}
+.eb-clazzinfo-left>view{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 10rpx;
+}
+.eb-clazzinfo-left>view>text:first-child{
+  color: #2171b5;
+}
+.eb-clazzinfo-right{
+  margin-right: 30rpx;
+}
+
+.eb-homework-box{
+  width: 100%;
+}
+.eb-homework-item{
+  width: 100%;
+  height: 215rpx;
+  padding: 3% 0;
+}
+.eb-homework-item:not(:first-child){
+  border-top: 1px solid #dcdcdc;
+
+}
+.eb-homework-item-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 0 30rpx 15rpx 30rpx;
+}
+.eb-homework-item-middle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  
+  margin: 0 30rpx 0 25rpx;
+}
+.eb-homework-item-middle>view:nth-child(2){
+  color: #fff;
+  border-radius: 10rpx;
+  padding: 10rpx 20rpx;
+}
+.yellow{
+  background: #eea70f;
+}
+.green{
+  background: #80c269;
+}
+.red{
+  background: #e60012;
+}
+.eb-homework-item-avatar{
+  width: 80rpx;
+  height: 80rpx;
+  background: #dedede;
+  border-radius: 100%;
+}
+.eb-homework-item-avatar:not(:first-child){
+  margin-left: 10rpx;
+}
+.eb-homework-item-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #4b4b4b;
+
+  margin: 15rpx 30rpx 0 30rpx;
+}
+.eb-homework-item-bottom>view{
+  height: 50rpx;
+  line-height: 50rpx;
+  position: relative;
+}
+.eb-homework-item-bottom>view>text{
+  display: inline-block;
+  padding-left: 60rpx;
+}
+.eb-homework-item-bottom>view>image{
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -15rpx;
+}
+
+/* exerciseBook end */
+
+/* wrongBook start */
+page{
+  background: #eae8e8;
+}
+
+.wrongBook-container{
+  width: 100%;
+  margin-top: 75rpx;
+  background: #fff;
+  
+  display: flex;
+  flex-direction: column;
+}
+.wrongBook-item{
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  color: #939393;
+}
+.wrongBook-item:not(:first-child){
+  border-top: 1px solid #dcdcdc;
+}
+.wrongBook-item-info{
+  position: relative;
+  font-size: 14px;
+}
+.wrongBook-item-info>text:nth-child(2){
+  margin-left: 15rpx;
+  color: #000;
+}
+.wrongBook-item-info>text:nth-child(3){
+  margin-left: 15rpx;
+}
+.wrongBook-item-info>text:nth-child(4){
+  margin-left: 25rpx;
+}
+.wrongBook-item-info>image{
+  width: 71rpx;
+  height: 71rpx;
+  vertical-align: middle;
+  margin-left: 30rpx;
+}
+.wrongBook-item-sign{
+  margin-right: 30rpx;
+}
+
+/* wrongBook end */

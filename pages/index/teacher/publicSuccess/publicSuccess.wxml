@@ -1,0 +1,29 @@
+<!--pages/publicSuccess/publicSuccess.wxml-->
+
+<view class='success-container'>
+  <view class='success-info'>
+    <image class='success-img' src='{{imgUrl}}/images/mailbox.png' />
+    <text>发布作业成功</text>
+  </view>
+  <view class='success-sitting'>
+    <view class='public-item'>
+      <text class='public-name'>布置班级</text>
+      <view class='public-name-input'>
+        <input value='{{class_name}}' disabled='disbaled' />
+        <text></text>
+      </view>
+    </view>
+    <view class='public-item'>
+      <text class='public-name'>截止时间</text>
+      <view class='public-name-input'>
+        <input value='{{date}}' disabled='disbaled'  />
+        <text></text>
+      </view>
+    </view>
+
+    <view class='public-container-button'>
+      <button>发布到微信群</button>
+      <button bindtap='completeOntap'>完成</button>
+    </view>
+  </view>
+</view>

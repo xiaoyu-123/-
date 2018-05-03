@@ -1,0 +1,41 @@
+<!--pages/index/parent/p_center/p_center.wxml-->
+<view class='cover'>
+  <image  src='{{imgUrl}}/images/header.png'></image>
+  <text>编辑封面</text>
+</view>
+<view class='head'>
+  <image src='{{p_avatarUrl}}'></image>
+  <image src='{{student.avatarUrl}}'></image>
+</view>
+<view class='name'>{{student.name}}家长</view>
+
+<view class='list'>
+  <view bindtap='homeWork'>
+    <image src='{{imgUrl}}/images/l1.png'></image>
+    <view class='bor'>
+      <view class='title'>作业报告</view>
+      <view>查看孩子的作业提交情况、作业详情</view>
+    </view>
+  </view>
+  <view bindtap='record'>
+    <image src='{{imgUrl}}/images/l2.png'></image>
+    <view class='bor'>
+      <view class='title'>学习记录</view>
+      <view>了解孩子学习的进度</view>
+    </view>
+  </view>
+  <view bindtap='play'>
+    <image src='{{imgUrl}}/images/l3.png'></image>
+    <view class='bor'>
+      <view class='title'>学习乐园</view>
+      <view>金币会员功能，金币商城功能</view>
+    </view>
+  </view>
+  <view bindtap='rank'>
+    <image src='{{imgUrl}}/images/l4.png'></image>
+    <view class='bor'>
+      <view class='title'>排名情况</view>
+      <view>了解孩子的排名位置</view>
+    </view>
+  </view>
+</view>

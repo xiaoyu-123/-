@@ -1,0 +1,63 @@
+<!--pages/index/friend/solo/solo.wxml-->
+<view class='bg' bindtap='result'>
+  <view class='head'>
+    <view class='green c'>
+      <view>
+        <image src='{{imgUrl}}/images/1.jpg'></image>
+      </view>
+      <view>hhhhh</view>
+    </view>
+    <view class='time'>
+      <view>
+        <view> 04:00</view>
+      </view>
+    </view>
+    <view class='pink c'>
+      <view class=''>
+        <image src='{{imgUrl}}/images/1.jpg'></image>
+      </view>
+      <view>hhhhh</view>
+    </view>
+  </view>
+  <!--题  -->
+  <view class='topic'>
+    <!--进度条  -->
+    <view class='pro'>
+      <template>
+        <wxc-progress percent="60" active-color="#ac89ff,#ff76a2"></wxc-progress>
+      </template>
+    </view>
+    <!--题  -->
+    <view class='topic_detail'>
+      <view class='title'>第三题</view>
+      <view class='name'>根据表中一次函数的自变量x与函数y的对应值，可得p的值为（  ）</view>
+      <view class='pic'><image src='{{imgUrl}}/images/ti.jpg'></image></view>
+      <radio-group bindchange='radio'>
+        <label class='true'>
+          <text>√</text>
+          A.  1
+          <radio hidden='true' value='a'>
+            
+          </radio>
+        </label>
+        <label class='false'>B.  1
+          <text>×</text>
+          <radio hidden='true' value='b'>
+            
+          </radio>
+        </label>
+        <label>C.  1
+          <radio hidden='true'>
+            
+          </radio>
+        </label>
+      </radio-group>
+    </view>
+    <!--进度条  -->
+    <view class='pro'>
+    <template>
+        <wxc-progress percent="60" active-color="#ac89ff,#ff76a2"></wxc-progress>
+      </template>
+    </view>
+  </view>
+</view>

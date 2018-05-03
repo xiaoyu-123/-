@@ -1,0 +1,823 @@
+.wrapper{
+  width: 100%;
+  background-color: #99cccc;
+  position: relative;
+}
+.bg{
+  width: 750rpx;
+  height: 1086rpx;
+}
+.bg image{
+  width: 100%;
+  height: 100%;
+}
+.header{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 290rpx;
+  background-color: rgba(51, 102, 204, .8);
+}
+/* 主体框 */
+.content{
+  position: absolute;
+  left: 9%;
+  top: 115rpx;
+  width: 600rpx;
+  height: 1000rpx;
+  border-radius: 45rpx;
+  border: 5px solid #6699cc;
+}
+.content_top{
+  position: absolute;
+  left: 140rpx;
+  top: -130rpx;
+  width: 328rpx;
+  height: 199rpx;
+  z-index: 999;
+}
+.content_top image{
+  width: 100%;
+  height: 100%;
+}
+.conten_header{
+  width: 100%;
+  height: 200rpx;
+  background-color: #fff;
+  border-radius: 36rpx;
+  position: relative;
+}
+.conten_header image{
+  width: 100%;
+  height: 100%;
+}
+/* 下拉菜单 */
+.conten_header .rankingArr{
+  width: 135rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  background-color:rgba(0, 0, 0, .1);
+  position: absolute;
+  right: 30rpx;
+  top: 35rpx;
+}
+.conten_header .rankingArr .xuanzhong{
+  font-size: 22rpx;
+  color: 000;
+  float: left;
+  margin-left: 40rpx;
+}
+.conten_header .rankingArr .jiantou{
+  float: right;
+  width: 20rpx;
+  height:15rpx;
+  margin-bottom: 10rpx;
+  margin-right: 10rpx;
+}
+.conten_header .rankingArr .jiantou image{
+  width: 100%;
+  height: 100%;
+}
+/* 下拉表 */
+.rannkingArrli{
+  width: 135rpx;
+  text-align: center;
+  background-color: #fff;
+  position: absolute;
+  left: 0rpx;
+  bottom: -164rpx;
+  z-index: 999;
+    font-size: 18rpx;
+  color: #000;
+}
+.rannkingArrli .Arrli{
+  width: 100%;
+  height:40rpx;
+  line-height: 40rpx;
+  border-bottom: 1px solid #eee;
+  font-size: 18rpx;
+  color: #000;
+}
+.rannkingArrli .last{
+  border-bottom: 0;
+}
+.rannkingArrli_1{
+  display: none;
+}
+.conten_header .title{
+  font-size: 32rpx;
+  color: #66ccff; 
+ padding-top: 90rpx; 
+}
+.conten_header .title .titleArr{
+  width: 155rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  float: left;
+  text-align: center;
+  border: 1px solid #ccffff;
+  border-radius: 25rpx;
+  margin-left: 35rpx;
+}
+/* 选中 */
+.conten_header .title .current{
+  background-color: #6666ff;
+  color: #fff;
+}
+/* 闯关排名 */
+.blockaderanking{
+  position: absolute;
+  left: 0;
+  top: 155rpx;
+  width: 100%;
+  background-color: #fff;
+}
+.blockaderanking .rankingLi{
+  width: 100%;
+  height: 105rpx;
+  border-bottom: 1px solid #ccc;
+}
+.blockaderanking .rankingLi .number{
+  float: left;
+  margin-left: 40rpx;
+  font-size: 30rpx;
+  color: #ff0066;
+  margin-top: 30rpx;
+}
+.blockaderanking .rankingLi .logo{
+   float: left;
+   width: 82rpx;
+   height: 81rpx;
+   margin-left: 40rpx;
+   margin-top: 10rpx;
+}
+.blockaderanking .rankingLi .logo image{
+  width: 100%;
+  height: 100%;
+  margin-top: 5rpx;
+  border-radius: 50%;
+}
+.blockaderanking .rankingLi .center{
+   float: left;
+   line-height: 35rpx;
+   margin-top: 20rpx;
+   margin-left: 40rpx;
+   width: 225rpx;
+   height: 85rpx;
+}
+.blockaderanking .rankingLi .center .top{
+  width: 100%;
+  height: 40rpx;
+}
+.blockaderanking .rankingLi .center .topL{
+  float: left;
+  font-size: 28rpx;
+  color: #333;
+}
+.blockaderanking .rankingLi .center .topR{
+  float: left;
+  font-size: 22rpx;
+  color: #999;
+  margin-left: 5rpx;
+}
+.blockaderanking .rankingLi .center .bottom{
+  font-size: 20rpx;
+  color: #999;
+   width: 100%;
+  height: 40rpx;
+}
+.blockaderanking .rankingLi .star{
+   float: left;
+   width: 27rpx;
+   height: 25rpx;
+   margin-left: 25rpx;
+   margin-top: 20rpx;
+}
+.blockaderanking .rankingLi .star image{
+  width: 100%;
+  height: 100%;
+}
+.blockaderanking .rankingLi  .much1{
+   float: left;
+   font-size: 30rxp;
+   color: #ffcc00;
+   margin-left: 10rpx;
+   margin-top: 20rpx;
+}
+.blockaderanking .rankingLi .hande{
+   float: left;
+   width: 26rpx;
+   height: 27rpx;
+   margin-left: 20rpx;
+   margin-top: 20rpx;
+}
+.blockaderanking .rankingLi .hande image{
+  width: 100%;
+  height: 100%;
+}
+.blockaderanking .rankingLi  .much2{
+  float: left;
+  font-size: 28rpx;
+  color: #999;
+  margin-left: 10rpx;
+  margin-top: 30rpx;
+}
+.blockaderanking{
+  border-top: 15rpx solid #ccc;
+}
+.blockaderanking .one .much2{
+  color: #3399ff;
+}
+/*闯关底部 */
+.blockadefooter{
+  width: 100%;
+  height: 160rpx;
+  background-color: #3399ff;
+  position:fixed;
+  left: 0;
+  bottom:0;
+}
+.blockadefooter .footer_logo{
+  float: left;
+  width: 103rpx;
+  height: 102rpx;
+  margin-top: 30rpx;
+  margin-left: 45rpx;
+}
+.blockadefooter .footer_logo image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.blockadefooter .footer_center{
+   float: left;
+   line-height: 35rpx;
+   margin-top: 45rpx;
+   margin-left: 40rpx;
+   /* padding-bottom: 20rpx; */
+   width: 180rpx;
+   height: 70rpx;
+}
+.blockadefooter .footer_center .topL{
+  float: left;
+  font-size: 28rpx;
+  color: #fff;
+  width: 100%;
+}
+.blockadefooter .footer_center .topR{
+  font-size: 22rpx;
+  color: #fff;
+  float: left;
+  margin-left: 5rpx;
+}
+.blockadefooter .footer_center .bottom{
+   float: left;
+  font-size: 22rpx;
+  color: #fff;
+  margin-left: 20rpx;
+}
+.blockadefooter .footer_right{
+  width: 220rpx;
+  float: left;
+  margin-left: 50rpx; 
+  margin-top: 40rpx;
+}
+.blockadefooter .footer_right .right_star{
+  width: 45rpx;
+  height: 38rpx;
+  float:left;
+  margin-left: 30rpx;
+} 
+.blockadefooter .footer_right .ringht_much1{
+  color: #fff;
+  float: left;
+  font-size: 38rpx;
+  width: 135rpx;
+}
+.blockadefooter .footer_right .right_hande{
+  width: 33rpx;
+  height: 33rpx;
+  float: left;
+  margin-left: 25rpx;
+}
+.blockadefooter .footer_right .right_much2{
+  float: left;
+  color: #fff;
+  font-size: 38rpx;
+  margin-left: 10rpx;
+}
+.blockadefooter .footer_right .right_hande image{
+  width: 100%;
+  height: 100%;
+}
+.blockadefooter .footer_right .right_star image{
+  width: 100%;
+  height: 100%;
+}
+.blockadefooter .footer_right .nowRanking{
+  color: #fff;
+  font-size: 24rpx;
+}
+.blockadefooter .share {
+  float: right;
+  width: 56rpx;
+  height: 51rpx;
+  margin-right: 30rpx;
+  margin-top: 60rpx;
+
+}
+.blockadefooter .share image{
+  width: 100%;
+  height: 100%;
+}
+/* 等级排名 */
+.challengeranking{
+  position: absolute;
+  left: 0;
+  top: 155rpx;
+  width: 100%;
+  background-color: #fff;
+}
+.challengeranking .rankingLi{
+  width: 100%;
+  height: 105rpx;
+  border-bottom: 1px solid #ccc;
+}
+.challengeranking .rankingLi .number{
+  float: left;
+  margin-left: 40rpx;
+  font-size: 30rpx;
+  color: #ff0066;
+  margin-top: 30rpx;
+}
+.challengeranking .rankingLi .logo{
+   float: left;
+   width: 82rpx;
+   height: 81rpx;
+   margin-left: 40rpx;
+   margin-top: 10rpx;
+}
+.challengeranking .rankingLi .logo image{
+  width: 100%;
+  height: 100%;
+  margin-top: 5rpx;
+  border-radius: 50%;
+}
+.challengeranking .rankingLi .center{
+   float: left;
+   line-height: 35rpx;
+   margin-top: 20rpx;
+   margin-left: 40rpx;
+   width:200rpx;
+   height:85rpx;
+
+}
+.challengeranking .rankingLi .center .top{
+    width: 100%;
+    height: 40rpx;
+}
+.challengeranking .rankingLi .center .topL{
+  float: left;
+  font-size: 28rpx;
+  color: #333;
+}
+.challengeranking .rankingLi .center .topR{
+  float: left;
+  font-size: 22rpx;
+  color: #999;
+  margin-left: 5rpx;
+}
+.challengeranking .rankingLi .center .bottom{
+  font-size: 20rpx;
+  color: #999;
+  width: 100%;
+  height: 40rpx;
+  margin-top: 40rpx;
+}
+.challengeranking .rankingLi .star{
+   float: left;
+   width: 27rpx;
+   height: 25rpx;
+   margin-left: 30rpx;
+   margin-top: 20rpx;
+}
+.challengeranking .rankingLi .star image{
+  width: 100%;
+  height: 100%;
+}
+.challengeranking .rankingLi  .much1{
+   float: left;
+   font-size: 30rxp;
+   color: #ffcc00;
+   margin-left: 10rpx;
+   margin-top: 20rpx;
+}
+.challengeranking .rankingLi .hande{
+   float: left;
+   width: 26rpx;
+   height: 27rpx;
+   margin-left: 20rpx;
+   margin-top: 20rpx;
+}
+.challengeranking .rankingLi .hande image{
+  width: 100%;
+  height: 100%;
+}
+.challengeranking .rankingLi  .much2{
+  float: left;
+  font-size: 28rpx;
+  color: #999;
+  margin-left: 10rpx;
+  margin-top: 30rpx;
+}
+.challengeranking{
+  border-top: 15rpx solid #ccc;
+}
+.challengeranking .one .much2{
+  color: #3399ff;
+}
+.challengeranking .posts{
+  float: left;
+  font-size: 22rpx;
+  color: #666;
+  margin-top: 30rpx;
+}
+.challengeranking .posts view{
+  float: left;
+}
+.challengeranking .posts .zong,.posts .win{
+  font-size: 28rpx;
+  color: #ff0000;
+  margin-left: 30rpx;
+}
+.challengeranking .posts .socer{
+  margin-top: 8rpx;
+  margin-left: 5rpx;
+}
+/* 挑战底部 */
+.challengefooter{
+  width: 100%;
+  height: 160rpx;
+  background-color: #3399ff;
+  position:fixed;
+  left: 0;
+  bottom:0;
+}
+.challengefooter .footer_logo{
+  float: left;
+  width: 103rpx;
+  height: 102rpx;
+  margin-top: 30rpx;
+  margin-left: 45rpx;
+}
+ .challengefooter .footer_logo image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+ .challengefooter .footer_center{
+   float: left;
+   line-height: 35rpx;
+   margin-top: 45rpx;
+   margin-left: 40rpx;
+   /* padding-bottom: 20rpx; */
+   width: 180rpx;
+   height: 70rpx;
+}
+ .challengefooter .footer_center .topL{
+  float: left;
+  font-size: 28rpx;
+  color: #fff;
+  width: 100%;
+}
+.challengefooter .footer_center .topR{
+  font-size: 22rpx;
+  color: #fff;
+  float: left;
+  margin-left: 5rpx;
+}
+.challengefooter .footer_center .bottom{
+   float: left;
+  font-size: 22rpx;
+  color: #fff;
+  margin-left: 20rpx;
+  width: 155rpx;
+}
+.challengefooter .footer_right{
+  width: 220rpx;
+  float: left;
+  margin-left: 50rpx; 
+  margin-top: 40rpx;
+}
+.challengefooter .footer_right .right_star{
+  width: 45rpx;
+  height: 38rpx;
+  float:left;
+  margin-left: 30rpx;
+} 
+.challengefooter .footer_right .ringht_much1{
+  color: #fff;
+  float: left;
+  font-size: 38rpx;
+  width: 135rpx;
+}
+.challengefooter .footer_right .right_hande{
+  width: 33rpx;
+  height: 33rpx;
+  float: left;
+  margin-left: 25rpx;
+}
+.challengefooter .footer_right .right_much2{
+  float: left;
+  color: #fff;
+  font-size: 38rpx;
+  margin-left: 10rpx;
+}
+.challengefooter .footer_right .right_hande image{
+  width: 100%;
+  height: 100%;
+}
+.challengefooter .footer_right .right_star image{
+  width: 100%;
+  height: 100%;
+}
+.challengefooter .footer_right .nowRanking{
+  color: #fff;
+  font-size: 28rpx;
+}
+.challengefooter  .share{
+  float: right;
+  width: 56rpx;
+  height: 51rpx;
+  margin-right: 30rpx;
+  margin-top: 60rpx;
+
+}
+.challengefooter  .share image{
+  width: 100%;
+  height: 100%;
+}
+.challengefooter .jushu{
+  width: 205rpx;
+  float: left;
+  font-size: 22rpx;
+  color: #fff;
+}
+.challengefooter .jushu view{
+  float: left;
+}
+.challengefooter .jushu .zong,.jushu .win{
+  font-size: 28rpx;
+  margin-left: 30rpx;
+}
+.challengefooter .jushu .socer{
+  margin-top: 8rpx;
+  margin-left: 5rpx;
+}
+/* 挑战排名 */
+.graderanking{
+  position: absolute;
+  left: 0;
+  top: 155rpx;
+  width: 100%;
+  background-color: #fff;
+}
+.graderanking .rankingLi{
+  width: 100%;
+  height: 105rpx;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.graderanking .rankingLi .number{
+  float: left;
+  margin-left: 40rpx;
+  font-size: 30rpx;
+  color: #ff0066;
+  margin-top: 30rpx;
+}
+.graderanking .rankingLi .logo{
+   float: left;
+   width: 82rpx;
+   height: 81rpx;
+   margin-left: 40rpx;
+   margin-top: 10rpx;
+}
+.graderanking .rankingLi .logo image{
+  width: 100%;
+  height: 100%;
+  margin-top: 5rpx;
+}
+.graderanking .rankingLi .center{
+   float: left;
+   line-height: 35rpx;
+   margin-top: 20rpx;
+   margin-left: 40rpx;
+   height: 85rpx;
+   width: 160rpx;
+}
+.graderanking .rankingLi .center .top{
+  width: 100%;
+  height: 40rpx;
+}
+.graderanking .rankingLi .center .topL{
+  float: left;
+  font-size: 28rpx;
+  color: #333;
+}
+.graderanking .rankingLi .center .topR{
+  float: left;
+  font-size: 22rpx;
+  color: #999;
+  margin-left: 5rpx;
+}
+.graderanking .rankingLi .center .bottom{
+  font-size: 20rpx;
+  color: #999;
+    width: 100%;
+  height: 40rpx;
+}
+.graderanking .rankingLi .star{
+   float: left;
+   width: 27rpx;
+   height: 25rpx;
+   margin-left: 15rpx;
+   margin-top: 10rpx;
+}
+.graderanking .rankingLi .star image{
+  width: 100%;
+  height: 100%;
+}
+.graderanking .rankingLi  .much1{
+   float: left;
+   font-size: 30rxp;
+   color: #ffcc00;
+   margin-left: 10rpx;
+   margin-top: 10rpx;
+}
+.graderanking .rankingLi .hande{
+   float: left;
+   width: 26rpx;
+   height: 27rpx;
+   margin-left: 20rpx;
+   margin-top: 20rpx;
+}
+.graderanking .rankingLi .hande image{
+  width: 100%;
+  height: 100%;
+}
+.graderanking .rankingLi  .much2{
+  float: left;
+  font-size: 28rpx;
+  color: #999;
+  margin-left: 10rpx;
+  margin-top: 30rpx;
+}
+.graderanking{
+  border-top: 15rpx solid #ccc;
+}
+.graderanking .one .much2{
+  color: #3399ff;
+}
+.graderanking .posts{
+  width: 160rpx;
+  position: absolute;
+  top: 60rpx;
+  right:50rpx;
+  font-size: 22rpx;
+  color: #666;
+}
+.graderanking .posts view{
+  float: left;
+}
+.graderanking .posts .zong,.posts .win{
+  font-size: 28rpx;
+  color: #ff0000;
+  margin-left: 5rpx;
+}
+.graderanking .posts .socer{
+  margin-top: 8rpx;
+  margin-left: 5rpx;
+}
+/*等级底部 */
+.gradefooter{
+  width: 100%;
+  height: 160rpx;
+  background-color: #3399ff;
+  position:fixed;
+  left: 0;
+  bottom:0;
+}
+.gradefooter .footer_logo{
+  float: left;
+  width: 103rpx;
+  height: 102rpx;
+  margin-top: 30rpx;
+  margin-left: 45rpx;
+}
+.gradefooter .footer_logo image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+ .gradefooter .footer_center{ 
+   float: left;
+   height: 50rpx;
+   line-height: 35rpx;
+   margin-top: 45rpx;
+   margin-left:10rpx;
+  font-size: 32rpx;
+  color: #fff;
+}
+ .gradefooter .footer_center .topL{
+   height: 50rpx;
+    width: 515rpx;
+ }
+ .gradefooter .footer_center .topL .word{
+  font-size: 32rpx;
+  color: #fff;
+  float: left;
+}
+.gradefooter .footer_center .topL .right_star{
+  width: 45rpx;
+  height: 38rpx;
+  float: left;
+  margin-left: 20rpx;
+}
+.gradefooter .footer_center .topL .right_star image{
+  width: 100%;
+  height: 100%;
+}
+.gradefooter .footer_center .topL .right_much1{
+  color: #fff;
+  float: left;
+  font-size: 38rpx;
+}
+.gradefooter .footer_center .topL .right_hande{
+  width: 33rpx;
+  height: 33rpx;
+  float: left;
+  margin-left: 20rpx;
+}
+.gradefooter .footer_center .topL .right_much2{
+  float: left;
+  margin-left: 10rpx;
+}
+.gradefooter .footer_center .topL .right_hande image{
+  width: 100%;
+  height: 100%;
+}
+.gradefooter .footer_right{
+  height: 50rpx;
+}
+.gradefooter .footer_right .bottom{
+  font-size: 20rpx;
+  float: left;
+  color: #fff;
+  margin-top: 10rpx;
+}
+ .gradefooter .footer_right .nowRanking{
+   font-size: 28rpx;
+   float: left;
+   color: #fff;
+   margin-left: 50rpx;
+ }
+.gradefooter  .share{
+  float: right;
+  width: 56rpx;
+  height: 51rpx;
+  position: absolute;
+  top: 75rpx;
+  right: 25rpx;
+
+}
+.gradefooter  .share image{
+  width: 100%;
+  height: 100%;
+}
+.gradefooter .jushu{
+  font-size: 22rpx;
+  color: #fff;
+  float: left;
+  margin-left: 20rpx;
+}
+.gradefooter .jushu view{
+  float: left;
+}
+.gradefooter .jushu .zong,.jushu .win{
+  font-size: 28rpx;
+  color: #fff;
+  margin-left: 8rpx;
+}
+.gradefooter .jushu .socer{
+  margin-top: 5rpx;
+  margin-left: 5rpx;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+
+

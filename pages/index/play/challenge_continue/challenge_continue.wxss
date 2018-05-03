@@ -1,0 +1,240 @@
+/* pages/index/play/challenge_continue/challenge_continue.wxss */
+.conatiner{
+  width: 100%;
+  background-color:#6699ff;
+  position: relative;
+  height: 1208rpx;
+}
+.bg{
+  width:750rpx;
+  height:670rpx;
+}
+.bg image{
+  width:100%;
+  height:100%;
+}
+.content{
+  position: absolute;
+  left:0;
+  top:50rpx;
+  width: 100%;
+  text-align: center;
+}
+/* 头像 */
+.headPortrait{
+  margin-left: 43%;
+  text-align: center;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 10rpx solid #fff;
+}
+.headPortrait image{
+  display:block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.headName{
+  margin-top: 10rpx;
+  color: #fff;
+  font-size: 36rpx;
+  text-align: center;
+}
+.headCalss{
+  margin-top: 10rpx;
+  color: #fff;
+  font-size: 24rpx;
+  text-align: center
+}
+/* 挑战信息 */
+.challengeMesg{
+  margin-top:25rpx;
+  height: 170rpx;
+}
+.numbers{
+  margin-left: 35rpx;
+  float: left;
+  width: 328rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .2);
+  margin-bottom: 40rpx;
+}
+.challengeMesg .title{
+  font-size: 32rpx;  
+  float: left;
+  color: #fff;
+  margin-left: 40rpx;
+  margin-right: 15rpx;
+}
+.challengeMesg text{
+  float: left;
+  font-size: 32rpx;
+  color: #fff;
+}
+.numbers .paiM{
+  margin-right: 110rpx;
+}
+.numbers  .win,.numbers .lose{
+  margin-right: 40rpx;
+}
+.challenge_pass{
+  width: 100%;
+  height: 100%;
+  margin-top:50rpx;
+  background-color: #6699ff;
+}
+.challenge_content{
+  padding-top: 25rpx;
+  width: 90%;
+  height: 170rpx;
+  margin: 0 auto;
+  background-color: #ffcc33;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+.challenge_center{
+  width: 100%;
+  height: 130rpx;
+  background-color:#cccc66;
+}
+.center_left{
+  float: left;
+  width: 82rpx;
+  height: 82rpx;
+}
+.center_left image{
+  margin-top: 16rpx;
+  margin-left: 57rpx;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 5rpx solid #fff;
+}
+.center_center{
+  float: left;
+  width: 200rpx;
+  text-align: center;
+  margin-left: 20%;
+  color: #0099ff;
+}
+.center_center .first{
+  font-size: 30rpx;
+}
+.center_center .second{
+  font-size: 32rpx;
+  margin-top: 9rpx;
+  margin-bottom: 5rpx;
+
+}
+.center_center .last{
+  font-size: 20rpx;
+  width: 220rpx;
+}
+.btnChallenge{
+  width: 140rpx;
+  float: left;
+  margin-left: 80rpx;
+   margin-top: 20rpx; 
+}
+.btnChallenge  .challenge_star{
+  float: left;
+  width: 41rpx;
+  height: 53rpx;
+}
+.btnChallenge  .challenge_star image{
+    width: 100%;
+    height: 100%;
+    transform:rotate(-10deg);
+}
+.btnChallenge .T image{
+   transform: rotate(10deg);
+   margin-left: 10rpx;
+ }
+ .btnChallenge .S image{
+   transform: rotate(-8deg);
+   margin-left: 5rpx;
+ }
+.btnChallenge button{
+  width: 135rpx;
+  height: 55rpx;
+  text-align: center;
+  line-height: 55rpx;
+  font-size: 28rpx;
+  background-color: #0099ff;
+  color: #fff;
+
+}
+.last_conten{
+  background-color: #a3a3a3;
+}
+.last_center{
+  background-color: #97a1a7;
+  position: relative;
+}
+.last_center_center{
+  color: #fff;
+  position: relative;
+}
+.last_last{
+  position: absolute;
+  left: 0rpx;
+  bottom: -50rpx;
+  width: 240rpx;
+  height: 44rpx;
+  background-color: #a0a0a0;
+  border-radius: 5rpx;
+}
+.last_center  .suo{
+  width: 120rpx;
+  height: 153rpx;
+  position: absolute;
+  left: 255rpx;
+  top:-10rpx;
+}
+.last_center  .suo image{
+  width: 100%;
+  height: 100%;
+}
+/* 底部 */
+.footer_circle{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -72rpx;
+  background-color:#6699ff; 
+}
+ .circle_one{
+    width: 23rpx;
+    height: 23rpx;
+    border-radius: 50%;
+    background-color: rgba(204, 204, 255, .4);
+    margin-left: 335rpx;
+}
+.circle_two{
+    width: 28rpx;
+    height: 28rpx;
+    border-radius: 50%;
+    background-color:rgba(204, 204, 255, .6);
+    margin-left: 333rpx;
+    margin-top: 5rpx;
+}
+.circle_three{
+    width: 32rpx;
+    height: 32rpx;
+    border-radius: 50%;
+    background-color: #ccffff;
+   margin-left: 331rpx;
+    margin-top: 5rpx;
+}
+.circle_four{
+    width: 36rpx;
+    height: 36rpx;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: 329rpx;
+    margin-top: 5rpx;
+}

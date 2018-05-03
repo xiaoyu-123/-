@@ -1,0 +1,150 @@
+<view class='wrapper'>
+  <view class='bg'><image src='{{imgUrl}}/images/challenge1-36.png'></image></view>
+  <view class='header'></view>
+  <view class='content'>
+    <view class='content_top'><image src='{{imgUrl}}/images/challenge1-28.png'></image></view>
+    <view class='conten_header'>
+      <view class='rankingArr' bindtap='liTap'>
+        <view class='xuanzhong'>查询</view>
+        <view class='jiantou'>
+          <image src='{{imgUrl}}/images/challenge1-38.png'></image>
+        </view>
+          <!-- 下拉表 -->
+        <view wx:if="{{show==true}}" class='rannkingArrli'>
+          <view class='Arrli'>全网排行</view>
+          <view class='Arrli' bindtap='provinceClick'>本省排行</view>
+          <view class='Arrli' bindtap='cityClick'>本市排行</view>
+          <view class='Arrli  last' bindtap='classClick'>班级排行</view>
+        </view>
+        <view wx:if="{{show==false}}" class='rannkingArrli_1'>
+          <view class='Arrli'>全网排行</view>
+          <view class='Arrli'>本省排行</view>
+          <view class='Arrli'>本市排行</view>
+          <view class='Arrli  last' bindtap='classClick'>班级排行</view>
+        </view>
+      </view>
+      <view class='title'>
+        <view class='titleArr  {{cont==1?"current":""}}' data-id='1' bindtap='onClick'>等级排名</view>
+        <view class='titleArr  {{cont==2?"current":""}}' data-id='2' bindtap='onClick'>闯关排名</view>
+        <view class='titleArr  {{cont==3?"current":""}}' data-id='3' bindtap='onClick'>挑战排名</view>
+      </view>
+    </view>
+    <!-- 等级排名 -->
+     <view class='{{cont==1?"":"show"}}'>
+      <view class="blockaderanking">
+        <view class='rankingLi' wx:for="{{block_list}}">
+          <view class='number'>{{item.ranking}}</view>
+          <view class='logo'><image src='{{item.avatarUrl}}'></image></view>
+          <view class='center'>
+            <view class='top'><view class='topL'>{{item.nickname}}</view><view class='topR'>{{item.the_title}}</view></view>
+            <view class='bottom'>{{item.province}}{{item.city}}</view>
+          </view>
+          <view class='star'><image src='{{imgUrl}}/images/challenge1-32.png'></image></view>
+          <view class='much1'>×79</view>
+        </view>
+        <view class='blockadefooter'>
+          <view class='footer_logo'><image src='{{userinfo.avatarUrl}}'></image></view>
+          <view class='footer_center'>
+            <view class='topL'>{{nickname}}</view><view class='topR'>{{userinfo.the_title}}</view>
+            <view class='bottom'>{{userinfo.province}}{{userinfo.city}}</view>
+          </view>
+        <view class='footer_right'>
+          <view class='right_star'><image src='{{imgUrl}}/images/challenge1-31.png'></image></view><view class='ringht_much1'>×56</view>
+          <view class='nowRanking'>全网排名第{{userinfo.ranking}}名</view>
+        </view>
+          <view class='share' bindtap='shareClick'>
+            <image src='{{imgUrl}}/images/challenge1-33.png'></image>
+          </view>
+      </view>
+    </view> 
+    </view>
+    
+    <!-- 闯关排名 -->
+    <view class='{{cont==2?"":"hidden"}}'>
+      <view class="challengeranking">
+        <view class='rankingLi' wx:for='{{break_list}}'>
+          <view class='number'>{{item.ranking}}</view>
+          <view class='logo'><image src='{{item.students.avatarUrl}}'></image></view>
+          <view class='center'>
+            <view class='topL'>{{item.students.nickname}}</view><view class='topR'>{{item.the_title}}</view>
+            <view class='bottom'>{{item.province}}{{item.city}}</view>
+          </view>
+          <view class='posts'>
+            <view class='zong'>总</view>
+            <view class='socer'>200</view>
+            <view class='win'>胜</view>
+            <view class='socer'>50</view>
+          </view>
+        </view>
+        <view class='challengefooter'>
+          <view class='footer_logo'><image src='{{userinfo.avatarUrl}}'></image></view>
+          <view class='footer_center'>
+                <view class='topL'>{{userinfo.nickname}}</view><view class='topR'>{{userinfo.the_title}}</view>
+                <view class='bottom'>{{userinfo.province}}{{userinfo.city}}</view>
+          </view>
+          <view class='footer_right'>
+            <view class='jushu'>
+              <view class='zong'>总</view>
+              <view class='socer'>200</view>
+              <view class='win'>胜</view>
+              <view class='socer'>50</view>
+            </view>
+            <view class='nowRanking'>全网排名第{{userinfo.ranking}}名</view>
+          </view>
+          <view class='share' bindtap='shareClick'>
+            <image src='{{imgUrl}}/images/challenge1-33.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 挑战排名 -->
+    <view class='{{cont==3?"":"hidden"}}'>
+        <view class="graderanking">
+          <view class='rankingLi'wx:for='{{challenge_list}}'>
+            <view class='number'>{{item.ranking}}</view>
+            <view class='logo'><image src='{{item.avatarUrl}}'></image></view>
+            <view class='center'>
+              <view class='top'><view class='topL'>{{item.students.nickname}}</view><view class='topR'>{{item.the_title}}</view></view>
+              <view class='bottom'>{{item.province}}{{item.city}}</view>
+            </view>
+            <view class='star'><image src='{{imgUrl}}/images/challenge1-32.png'></image></view>
+            <view class='much1'>×79</view>
+            <view class='posts'>
+              <view class='zong'>总</view>
+              <view class='socer'>{{item.challenge_number}}</view>
+              <view class='win'>胜</view>
+              <view class='socer'>{{item.success_number}}</view>
+            </view>
+            <view class='hande'><image src='{{imgUrl}}/images/challenge1-34.png'></image></view>
+            <view class='much2'>30</view>
+          </view>
+          <view class='gradefooter'>
+        <view class='footer_logo'><image src='{{userinfo.avatarUrl}}'></image></view>
+        <view class='footer_center'>
+              <view class='topL'>
+              <view class='word'>{{userinfo.nickname}}</view>  
+              <view class='right_star'><image src='{{imgUrl}}/images/challenge1-31.png'></image></view>
+              <view class='right_much1'>×56</view> 
+              <view class='jushu'>
+                <view class='zong'>总</view>
+                <view class='socer'>{{userinfo.challenge_number}}</view>
+                <view class='win'>胜</view>
+                <view class='socer'>{{userinfo.success_number}}</view>
+              </view>
+              <view class='right_hande'>
+              <image src='{{imgUrl}}/images/challenge1-30.png'></image></view>
+              <view class='right_much2'>30</view></view>
+        </view>
+        <view class='footer_right'>
+          <view class='bottom'> {{userinfo.the_title}} {{userinfo.province}}{{userinfo.city}}</view>
+          <view class='nowRanking'>全网排名第2名</view>
+        </view>
+        <view class='share' bindtap='shareClick'>
+          <image src='{{imgUrl}}/images/challenge1-33.png'></image>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  </view>
+</view>

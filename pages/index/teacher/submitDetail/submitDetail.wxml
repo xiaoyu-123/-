@@ -1,0 +1,103 @@
+<!--pages/submitDetail/submitDetail.wxml-->
+<view class='detail-container'>
+  <view class='detail-top'>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+
+    <view class='detail-top-sign'>未提交</view>
+  </view>
+
+  <view class='detail-bottom'>
+  
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+    <view class='item-stu'>
+      <image class='item-stu-avatar' />
+      <text class='item-stu-name'>李希</text>
+    </view>
+
+  </view>
+
+  <button class='detail-remind'>提醒</button>
+
+</view>

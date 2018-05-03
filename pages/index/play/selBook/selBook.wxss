@@ -1,0 +1,86 @@
+/* pages/index/play/selBook/selBook.wxss */
+.wrapper{
+  width: 100%;
+}
+/* 版本 */
+.edition{
+  width: 100%;
+
+}
+.edition_title{
+  width: 550rpx;
+  margin: 0 auto;
+  border-bottom: 1px solid #eee;
+  font-size: 28rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.edition_content{
+  width: 100%;
+  height: 400rpx;
+}
+.edition_content .li{
+  width: 100%;
+  height:120rpx;
+}
+.edition_content .li .A{
+  float:left;
+  width: 25%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 32rpx;
+  border-radius: 10rpx;
+  border: 1px solid #eee;
+  margin-left: 40rpx;
+  margin-top: 40rpx;
+}
+.current{
+  background-color: #6699ff;
+  color: #fff;
+}
+.A:hover{
+  background-color: #6699ff;
+  color: #fff;
+}
+/* 年级 */
+.class{
+  width: 100%;
+
+}
+.class_title{
+  width: 550rpx;
+  margin: 0 auto;
+  border-bottom: 1px solid #eee;
+  font-size: 28rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.class_content{
+  width: 100%;
+  height: 475rpx;
+}
+.class_content .li{
+  width: 600rpx;
+  margin: 0 auto;
+  height:120rpx;
+}
+.class_content .li .A{
+  float:left;
+  width: 30%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 32rpx;
+  border-radius: 10rpx;
+  border: 1px solid #eee;
+  margin-left: 70rpx;
+  margin-top: 40rpx;
+}
+button{
+  width: 460rpx;
+  height: 80rpx;
+  background-color: #ff9900;
+  font-size: 32rpx;
+  color: #fff;
+}

@@ -1,0 +1,106 @@
+/* pages/index/parent/studentBind/studentBind.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  position: relative;
+  padding-top: 50rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.top,.bottom{
+  position: relative;
+  z-index: 100;
+  background: rgb(73, 147, 250);
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  border-radius: 10rpx;
+}
+.top{
+  height: 330rpx;
+}
+.top image{
+  position: absolute;
+  z-index: 101;
+  width: 445rpx;
+  height: 199rpx;
+  bottom: 25rpx;
+}
+.top text{
+  position: relative;
+  z-index: 110;
+  font-size: 22px;
+}
+.top input{
+  width: 200rpx;
+  height: 50rpx;
+  position:absolute;
+  left: 270rpx;
+  bottom:38rpx;
+  z-index: 110;
+  font-size: 22px;
+}
+.top text:nth-child(1){
+  margin-top: 50rpx;
+}
+.top text:nth-child(3){
+  margin-top: 125rpx;
+}
+
+
+.bottom{
+  height: 520rpx;
+  overflow: hidden;
+}
+.bottom image{
+  width: 764rpx;
+  height: 365rpx;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.bottom text{
+  width: 93%;
+  margin-top: 30rpx;
+  font-size: 16px;
+  line-height: 50rpx;
+}
+
+.tips{
+  position: relative;
+  z-index: 100;
+  font-size: 14px;
+  width: 90%;
+  margin: 30rpx 0;
+  color: rgb(171, 191, 222);
+}
+
+.button{
+  background: rgb(73, 147, 250);
+  width: 93%;
+  margin-top: 5rpx;
+  color: #fff;
+  position: relative;
+  z-index: 100;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  font-size: 20px;
+}

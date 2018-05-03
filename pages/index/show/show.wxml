@@ -1,0 +1,31 @@
+<view class='content'>
+  <view class='head'>
+    <image src='{{imgUrl}}/images/header.png' bindtap='getUserInfo'></image>
+      <!--头像  -->
+    <view class='header' bindtap='userInfo'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+      <view>{{userInfo.nickName}}</view>
+    </view>
+    <view class='set'>
+      <image src='{{imgUrl}}/images/code.png'></image>
+      <image src='{{imgUrl}}/images/set.png'></image>
+    </view>
+  </view>
+  <view class='list'>
+    <!--左边  -->
+    <view class='left'>
+      <image src='{{imgUrl}}/images/play.png' bindtap='play'></image>
+      <image src='{{imgUrl}}/images/study.png' bindtap='study'></image>
+      <image src='{{imgUrl}}/images/brush.png' bindtap='brush'></image>
+      
+    </view>
+    <!--右边  -->
+    <view class='right'>
+      <image src='{{imgUrl}}/images/rank.png' bindtap='rank'></image>
+      <image src='{{imgUrl}}/images/friend.png' bindtap='friend'></image>
+      <image src='{{imgUrl}}/images/shop.png' bindtap='shop'></image>
+      <image src='{{imgUrl}}/images/teacher.png' bindtap='teacher'></image>
+      <image src='{{imgUrl}}/images/parent.png' bindtap='parent'></image>
+    </view>
+  </view>
+</view>

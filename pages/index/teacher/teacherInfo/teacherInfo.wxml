@@ -1,0 +1,66 @@
+<!--pages/teacherInfo/teacherInfo.wxml-->
+<view class='container'>
+  <view class='item-container'>
+    <!-- repeat -->
+    <view class='item' bindtap='itemOntap' data-for='name'>
+      <text class='item-title'>姓名</text>
+      <input value='{{name}}' bindinput='nameOninput' focus='{{inputSwitch.name}}'/>
+      <text class='item-sign'></text>
+    </view>
+    <view class='item' bindtap='itemOntap' data-for='phone'>
+      <text class='item-title'>手机号</text>
+      <input value='{{phone}}' bindinput='phoneOninput' type='number' focus='{{inputSwitch.phone}}'/>
+      <text class='item-sign'></text>
+    </view>
+    <view class='item' bindtap='itemOntap' data-for='gender'>
+      <text class='item-title'>性别</text>
+      <picker mode='selector' bindchange='genderOnchanged' range='{{genderlist}}' value='0'>
+        <input value='{{gender}}' disabled='disabled'/>
+      </picker>
+      <text class='item-sign'>></text>
+    </view>
+  </view>
+  <view class='item-container'>
+    <view class='item' bindtap='itemOntap' data-for='province'>
+      <text class='item-title'>所在省份</text>
+      <picker mode="region" value='[0,0,0]' bindchange='regionOnchanged'>
+        <input value='{{province[0]}}{{province[1]}}{{province[2]}}' disabled='disabled'/>
+      </picker>
+      <text class='item-sign'>></text>
+    </view>
+    <view class='item' bindtap='itemOntap' data-for='address'>
+      <text class='item-title'>详细地址</text>
+      <input value='{{address}}' bindinput='addressOninput'/>
+      <text class='item-sign'></text>
+    </view>
+    <view class='item' bindtap='itemOntap' data-for='school'>
+      <text class='item-title'>所在学校</text>
+      <input value='{{school}}' bindinput='schoolOninput'/>
+      <text class='item-sign'></text>
+    </view>
+    <view wx:if='{{!isTeacher}}' class='item' bindtap='itemOntap' data-for='book'>
+      <text class='item-title'>科目教材</text>
+      <picker mode='selector' value='{{bookIndex}}' range='{{booklist}}' bindchange='bookOnchanged' range-key='name'>
+        <input value='{{book}}' disabled='disabled' placeholder='点击选取教材'/>
+      </picker>
+      <text class='item-sign'>></text>
+    </view>
+    <view wx:if='{{!isTeacher}}' class='item' bindtap='itemOntap' data-for='clazz'>
+      <text class='item-title'>所属班级</text>
+      <picker mode='selector' value='{{gradeIndex}}' bindchange='clazzOnchanged' range='{{gradeslist}}' range-key='text'>
+        <input value='{{clazz}}' disabled='disabled' placeholder='点击选取班级'/>
+      </picker>
+      <text class='item-sign'>></text>
+    </view>
+  </view>
+  <view wx:if='{{!isTeacher}}' class='item-container'>
+    <view class='item' bindtap='itemOntap' data-for='clazzName'>
+      <text class='item-title'>班级名称</text>
+      <input value='{{clazzName}}'/>
+      <text class='item-sign'>></text>
+    </view>
+  </view>
+  <view class='button-container'>
+    <button class='button-ok' bindtap='okButtonOntap'>确定</button>
+  </view>
+</view>

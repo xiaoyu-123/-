@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "好友对战",
+  "usingComponents": {
+      "wxc-progress": "/dist/packages/@minui/wxc-progress/dist/index"
+  }
+}

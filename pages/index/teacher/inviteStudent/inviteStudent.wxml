@@ -1,0 +1,18 @@
+<!--pages/inviteStudent/inviteStudent.wxml-->
+<view class='invite-stu-container'>
+  <image src='{{imgUrl}}/images/toTeacher.png' class='invite-stu-bg'></image>
+  <view class='invite-stu-infobox'>
+    <view class='invite-stu-infobox-child'>
+      <view class='invite-stu-infobox-num'>班号：{{class_number}}</view>
+      <text>学生可以通过您发布的群号，加入到您的班级中</text>
+      <image class='QRCode'></image>
+      <view class='invite-stu-buttonbox'>
+        <button>分享到群</button>
+        <button>保存到相册</button>
+      </view>
+    </view>
+  </view>
+</view>
+  <!--
+  <canvas id='invite-canvas' style='width:{{canvas.width}}px;height:{{canvas.height}}px'></canvas>
+  -->

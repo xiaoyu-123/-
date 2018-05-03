@@ -1,0 +1,158 @@
+/* pages/index/teacher/clazzEdit/clazzEdit.wxss */
+.homepage-class{
+  width: 100%;
+}
+
+.tabbar{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+}
+.tabbar-item{
+  flex: 1;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 14px;
+  position: relative;
+}
+.active::after{
+  content: '';
+  border-top: 2rpx solid #1babeb;
+  display: block;
+  width: 90rpx;
+  position: absolute;
+  left: 80rpx;
+}
+
+.homepage-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+.homepage-item{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.homepage-item:not(:first-child){
+  border-top: 1px solid #f9f9f9;
+}
+.homepage-item:first-child{
+  height: 130rpx;
+}
+.homepage-item:not(:first-child){
+  height: 90rpx;
+}
+.homepage-item>view{
+  margin: 0 30rpx;
+}
+.class-avatar{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 100%;
+  background: #ccc;
+  margin-right: 30rpx;
+}
+.save{
+  width: 80%;
+  margin-top: 100rpx;
+  background: #4993fa;
+  color: #fff;
+}
+
+.stulist-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stulist-topbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  width: 100%;
+  color: #a0a0a0;
+  height: 80rpx;
+}
+.stulist-topbar>view:first-child{
+  margin-left: 30rpx;
+}
+.stulist-topbar>view:last-child{
+  margin-right: 30rpx;
+}
+.stulist{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.stulist>view{
+  width: 80rpx;
+  margin: 30rpx 35rpx;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stulist>view>image{
+  width: 80rpx; 
+  height: 80rpx;
+  background: #ccc;
+  border-radius: 100%;
+}
+.stulist>view>text{
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #fff;
+  color: #adadad;
+  border-radius: 100%;
+  border: 1px solid #adadad;
+  font-size: 12px;
+}
+
+.homepage-item-homework{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  font-size: 14px;
+  border-bottom: 1px solid #eeeeee;
+}
+.homepage-item-homework:not(:first-child){
+  
+}
+.homepage-item-homework>view:first-child{
+  margin-left: 30rpx;
+}
+.homepage-item-homework>view:first-child>view:first-child{
+  
+}
+.homepage-item-homework>view:first-child>view:last-child{
+  color: #adadad;
+  font-size: 13px;
+  margin-top: 10rpx;
+}
+.homepage-item-homework>view:last-child{
+  margin-right: 30rpx;
+  color: #adadad;
+}

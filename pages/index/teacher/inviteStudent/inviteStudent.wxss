@@ -1,0 +1,94 @@
+/* pages/inviteStudent/inviteStudent.wxss */
+page{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.invite-stu-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.invite-stu-bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
+
+.invite-stu-infobox,.invite-stu-infobox-child{
+  
+  border-radius:40rpx;
+}
+.invite-stu-infobox{
+  height: 1000rpx;
+  width: 80%;
+  background: #4993fa;
+
+  position: relative;
+  z-index: 20;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.invite-stu-infobox-child{
+  width: 92%;
+  height: 96%;
+  background: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.invite-stu-infobox-num{
+  background: #f9f9f9;
+  color: #9149ee;
+  width: 380rpx;
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+}
+.invite-stu-infobox-child>text{
+  text-align: center;
+  display: block;
+  width: 430rpx;
+  font-size: 14px;
+}
+.QRCode{
+  background: paleturquoise;
+  width: 430rpx;
+  height: 430rpx;
+}
+.invite-stu-buttonbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.invite-stu-buttonbox>button{
+  font-size: 14px;
+  width: 200rpx;
+  background: #4993fa;
+  color: #fff;
+}
+.invite-stu-buttonbox>button:nth-child(2){
+  margin-left: 30rpx;
+}
+
+
+
+/*
+#invite-canvas{
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+}
+*/

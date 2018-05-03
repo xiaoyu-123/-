@@ -1,0 +1,3 @@
+<!--pages/index/parent/studyVip/studyVip.wxml-->
+<image src='{{imgUrl}}/images/vip.jpg'></image>
+<button>购买</button>

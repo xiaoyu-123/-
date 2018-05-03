@@ -1,0 +1,99 @@
+/* pages/index/parent/studyRecord/studyRecord.wxss */
+.person{
+  text-align: center;
+  padding: 30rpx;
+  background: #fff;
+}
+.person .name{
+  font-size: 30rpx;
+  color: #363636;
+  margin: 40rpx;
+}
+.person .progress_bg{
+  width: 240rpx;
+  height: 240rpx;
+  border-radius: 50%;
+  border: 5px solid #F2F2F2;
+  margin: 0 auto;
+  position: relative;
+  box-sizing:border-box;
+
+}
+.person .progress_bg  .progress{
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 240rpx;
+  height: 240rpx;
+  border-radius: 50%;
+  border: 5px solid #4B93FA;
+  box-sizing:border-box;
+
+}
+.person .progress_content{
+  position: absolute;
+  top: 30%;
+  left: 27%;
+  color: #777777;
+  font-size: 22rpx;
+}
+.person .progress_content view:first-child{
+  color: #4B93FA;
+  font-size: 45rpx;
+}
+.list{
+  display: flex;
+  color: #4B93FA;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 50rpx;
+  background: #fff;
+  padding: 30rpx 0;
+}
+page{
+  background: #F9F9F9;
+}
+.list>view{
+  width: 33.3%;
+}
+/*  */
+.list2{
+  background: #fff;
+  margin-top:15rpx;
+padding:10rpx 0;
+
+}
+.list2>view{
+  display: flex;
+  padding: 20rpx 0;
+}
+.list2 view image{
+  width:9%;
+height:66rpx;
+margin:20rpx 3%;
+
+}
+.list2 view .title{
+  font-size: 30rpx;
+  color: #494949;
+  margin-bottom:8rpx;
+
+}
+.list2 view{
+  font-size: 22rpx;
+  color: #B1B1B1;
+}
+.list2 view .bor{
+  /* border-bottom: 1px solid #DDDDDD; */
+  width:85%;
+  padding: 2% 0;
+  position: relative;
+
+}
+.list2 .true{
+  position:absolute;
+right:9%;
+top:42%;
+font-size:30rpx;
+color: #4B93FA;
+}

@@ -1,0 +1,22 @@
+<!--pages/index/play/selBook/selBook.wxml-->
+<view class='wrapper'>
+  <!-- 版本 -->
+  <view class='edition'>
+    <view class='edition_title'>请选择版本</view>
+    <view class='edition_content'>
+        <view class='li'> <view class='A'>人教版</view><view class='A'>北师大版</view><view class='A'>浙教版</view></view>
+        <view class='li'> <view class='A'>华师大版</view><view class='A'>苏科版</view><view class='A'>沪教版</view></view>
+        <view class='li'> <view class='A'>湘教版</view><view class='A'>冀教版</view><view class='A'>鲁教版</view></view>
+    </view>
+  </view>
+  <!-- 年级 -->
+  <view class='class'>
+    <view class='class_title'>请选择年级</view>
+      <view class='class_content'>
+        <view class='li'> <view class='A'>七年级上册</view><view class='A'>七年级下册</view></view>
+        <view class='li'> <view class='A'>八年级上册</view><view class='A'>八年级下册</view></view>
+        <view class='li'> <view class='A'>九年级上册</view><view class='A'>九年级下册</view></view>
+    </view>
+  </view>
+  <button bindtap='btnClick'>确定</button>
+</view>

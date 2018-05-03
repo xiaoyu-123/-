@@ -1,0 +1,245 @@
+/* pages/publicHomework/publicHomework.wxss */
+page{
+  background: #f9f9f9;
+}
+.public-container{
+  width: 100%;
+  background: #fff;
+}
+.public-container:not(:first-child){
+  margin-top: 20rpx;
+}
+.public-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 85rpx;
+}
+.public-item:not(:last-child){
+  border-bottom: 1px solid #eee;
+}
+.public-item>text{
+  padding-left: 30rpx;
+  font-size: 14px;
+  color: #999;
+}
+.public-name-input{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.public-name-input>input{
+  text-align: right;
+  font-size: 13px;
+
+}
+.public-name-input>text{
+  height: 85rpx;
+  line-height: 85rpx;
+  
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.select-component{
+  margin-right: 30rpx;
+}
+.select-component{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 130rpx;
+}
+.sub-button,.add-button{
+  width: 30rpx;
+  height: 30rpx;
+  border: 0;
+  color: #fff;
+  line-height: 30rpx;
+  text-align: center;
+}
+.sub-button{
+  background: #999;
+}
+.add-button{
+  background: #4993fa;
+}
+.select-num{
+  text-align: center;
+  width: 50rpx;
+}
+
+.radio-box{
+  margin-right: 30rpx;
+}
+
+.public-clazzlist{
+  display: flex;
+  flex-direction: column;
+}
+.public-clazz{
+  height: 120rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30rpx;
+}
+.public-clazz-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.public-clazz-avatar{
+  width: 80rpx;
+  height: 80rpx;
+  background: gray;
+  border-radius: 100%;
+}
+.public-clazz-info{
+  margin-left: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+.public-clazz-info>text:nth-child(1){
+  font-size:14px;
+}
+.public-clazz-info>text:nth-child(2){
+  margin-top: 10rpx;
+  font-size:12px;
+  color: #999;
+}
+
+.public-container-button{
+  width: 100%;
+  background: #fff;
+  padding: 9% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.public-container-button button{
+  width: 300rpx;
+  border: 1px solid #4993fa;
+}
+.public-container-button button:nth-child(1){
+  background: #fff;
+  color: #4993fa;
+}
+.public-container-button button:nth-child(2){
+  background: #4993fa;
+  color: #fff;
+}
+
+/* preview page style start */
+.preview-container{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #eeeeee;
+}
+.preview-container>view{
+  padding-left: 30rpx;
+}
+
+.question-type{
+  display: block;
+  width: 100%;
+  height: 75rpx;
+  line-height: 75rpx;
+  color: #4993fa;
+  border-bottom: 1px solid #eeeeee;
+  
+  font-size: 14px;
+}
+
+.quesetion-box{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin-top: 30rpx;
+}
+
+.quesetion-title-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-change{
+  color: #4993fa;
+  padding-right:30rpx; 
+}
+
+.question-option-box{
+  display: flex;
+  flex-direction: column;
+}
+.question-option-box .question-option{
+  margin-top: 40rpx;
+}
+
+.question-select-box{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+}
+
+.question-select-item{
+  border: 1px solid #eeeeee;
+  height: 90rpx;
+  width: 95%;
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.question-select-item>text:first-child{
+  display: block;
+  background: #eeeeee;
+  width: 90rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  color: #4993fa;
+}
+.question-select-item>text:nth-child(2){
+  padding-left: 50rpx;
+}
+.question-select-item:not(:first-child){
+  margin-top: 30rpx;
+}
+.active{
+  background: #eeeeee;
+}
+
+.question-level-box{
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  font-size: 14px;
+  color: #999999;
+}
+.question-level-box>text:not(:first-child){
+  margin-left: 20rpx;
+  font-size: 14px;
+}
+.question-level-box>text:last-child{
+  margin-left: 40rpx;
+  font-size: 14px;
+}
+
+.public-button{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  background: #4993fa;
+  color: #fff;
+}
+/* preview page style start*/

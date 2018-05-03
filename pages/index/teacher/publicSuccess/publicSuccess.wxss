@@ -1,0 +1,95 @@
+/* pages/publicSuccess/publicSuccess.wxss */
+page{
+  background: #f9f9f9;
+}
+
+.success-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.success-info{
+  width: 100%;
+  height: 500rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.success-img{
+  width: 265rpx;
+  height: 265rpx;
+}
+.success-info>text{
+  margin-top: 40rpx;
+  font-size: 14px;
+}
+
+.success-sitting{
+  margin-top: 20rpx;
+  background: #fff;
+  min-height: 685rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.public-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 85rpx;
+}
+.public-item:not(:last-child){
+  border-bottom: 1px solid #eee;
+}
+.public-item>text{
+  padding-left: 30rpx;
+  font-size: 14px;
+  color: #999;
+}
+.public-name-input{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.public-name-input>input{
+  text-align: right;
+  font-size: 13px;
+
+}
+.public-name-input>text{
+  height: 85rpx;
+  line-height: 85rpx;
+  
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+
+.public-container-button{
+  width: 100%;
+  background: #fff;
+  padding-top: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.public-container-button button{
+  width: 300rpx;
+  border: 1px solid #4993fa;
+  font-size: 14px;
+}
+.public-container-button button:nth-child(1){
+  background: #fff;
+  color: #4993fa;
+}
+.public-container-button button:nth-child(2){
+  background: #4993fa;
+  color: #fff;
+}

@@ -1,0 +1,58 @@
+/* pages/index/friend/friend.wxss */
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+}
+
+.c {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 426rpx;
+  height: 426rpx;
+  z-index: -3;
+  margin-left: -213rpx;
+}
+.h{
+  position: relative;
+  width:100%;
+height:426rpx;
+
+}
+.header {
+ position:absolute;
+top:356rpx;
+left:50%;
+width:80rpx;
+height:80rpx;
+margin-left:-50rpx;
+border-radius:100rpx;
+border:4px solid #fff;
+
+}
+
+page {
+  text-align: center;
+}
+
+.content {
+  color: #fff;
+  font-size: 30rpx;
+  line-height: 64rpx;
+  position: absolute;
+  bottom: 23%;
+  text-align: center;
+  width: 100%;
+}
+
+.content image {
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  margin: 0 10rpx;
+}

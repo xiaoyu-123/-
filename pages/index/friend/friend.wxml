@@ -1,0 +1,14 @@
+<!--pages/index/friend/friend.wxml-->
+<image src='{{imgUrl}}/images/friend_loading.jpg' class='bg'></image>
+<view class='h'>
+  <image src='{{imgUrl}}/images/friend_c.png' class='c'></image>
+  <image class='header' bindtap='header' src='http://wx.qlogo.cn/mmhead/VNDQtnw16icIreibpAhNlNIOpgoehtmFJKUeNnVtROVKy5cUSFnHyr1A/132'></image>
+</view>
+
+<view class='content'>
+  <view class='name'>张大哥</view>
+  <view>等级9</view>
+  <view>
+    <image src='{{imgUrl}}/images/gold.png'></image>50
+  </view>
+</view>

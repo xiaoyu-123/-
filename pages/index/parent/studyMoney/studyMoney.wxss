@@ -1,0 +1,2 @@
+/* pages/index/parent/studyMoney/studyMoney.wxss */
+@import '../studyVip/studyVip';

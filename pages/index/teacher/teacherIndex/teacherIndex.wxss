@@ -1,0 +1,469 @@
+page{
+  background: #f9f9f9;
+}
+/* clazz page start */
+.clazz{
+  width: 688rpx;
+  background: #fff;
+  border-radius: 5%;
+  margin-top: 30rpx;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.clazz-top{
+  width: 688rpx;
+  height: 300rpx;
+  
+  position: relative;
+
+}
+.clazz-bg{
+  width: 688rpx;
+  height: 217rpx;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.bg-mask{
+  width: 688rpx;
+  height: 300rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 15;
+}
+.clazz-info{
+  width: 688rpx;
+  height: 300rpx;
+  position: absolute;
+  top:0;
+  left: 0; 
+  z-index: 20;
+}
+.info-top{
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.info-top-left{
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.info-box{
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+.info-avatar{
+  width: 80rpx;
+  height: 80rpx;
+  background: #fff;
+  border-radius: 100%;
+}
+.info-top-right{
+  flex: 1;
+  height: 100%;
+  color: #fff;
+  position: relative;
+}
+.info-top-right>text{
+  position: absolute;
+  right: 30rpx;
+  top: 50rpx;
+  font-size: 12px;
+}
+
+.info-bottom{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.info-bottom-left{
+}
+.info-bottom-center{
+}
+.info-bottom-right{
+}
+.info-bottom-left,.info-bottom-center,.info-bottom-right{
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  color: #fff;
+}
+.rate-number{
+  font-size: 35px;
+}
+.rate-name,.rate-sign{
+  font-size: 12px;
+}
+
+.total-homework-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.homework{
+  width: 100%;
+  height: 130rpx;
+  font-size: 12px;
+  color: #999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:0 35rpx;
+}
+.homework-name,.homework-name-sign{
+  font-size: 18px;
+  color: #000;
+}
+.homework-top,.homework-bottom{
+  width: 90%;
+}
+.homework-bottom{
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.question-total{
+  font-size: 12px;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* page clazz end*/
+
+/* page question start*/
+/* pages/question/question.wxss */
+
+.item-container{
+  width: 100%;
+  background: #fff;
+  margin-bottom: 10rpx;
+}
+.bookinfo-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.book-title,.book-nav{
+  height: 95rpx;
+  line-height: 95rpx;
+  display: inline-block;
+  font-size: 14px;
+}
+.book-nav{
+  margin-right: 30rpx;
+}
+
+.book-title,.chapter-name,.section-name{
+  padding-left: 30rpx;
+}
+.chapter-nav,.part-nav{
+  padding-right: 30rpx;
+  color: #999;
+}
+
+.chapter-container,.section-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 95rpx;
+}
+.chapter-container{
+  border-bottom: 1px solid #dddddd;
+}
+.chapter-name{
+  font-weight: 600;
+}
+.chapter-name,.section-name{
+  font-size: 14px;
+}
+.chapter-nav{
+  font-size: 14px;
+}
+
+.part-container{
+  display: flex;
+  flex-direction: column;
+}
+.part{
+  height: 120rpx;
+  font-size: 14px;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.part:not(:first-child){
+  border-top: 1px solid #dddddd;
+}
+.part:last-child:not(:first-child){
+  border-bottom: 1px solid #dddddd;
+}
+
+.part-left{
+  display: flex;
+  flex-direction: column;
+  padding-left: 30rpx;
+}
+.part-recommend{
+  margin-top: 10rpx;
+  color: #999;
+}
+/* page question end*/
+
+/* page user start*/
+
+.userinfo{
+  width: 100%;
+  height: 280rpx;
+  background: #2171b5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.userinfo-avatar{
+  width: 90rpx;
+  height: 90rpx;
+  background: #fff;
+  border-radius: 100%;
+}
+.userinfo-nickname,.userinfo-school{
+  color: #fff;
+  font-size: 14px;
+}
+.userinfo-nickname{
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.userinfo-school{
+
+}
+
+.sittings{
+  width: 100%;
+  height: 90rpx;
+  background: #fff;
+  line-height: 90rpx;
+  padding-left: 70rpx;
+}
+.sittingIcon{
+  width: 38rpx;
+  height: 38rpx;
+  vertical-align: middle;
+}
+.sittingText{
+  margin-left: 30rpx;
+  font-size: 14px;
+}
+
+.gold{
+  width: 100%;
+  height: 90rpx;
+  margin-top: 20rpx;
+  background: #fff;
+  line-height: 90rpx;
+  padding-left: 70rpx;
+  position: relative;
+}
+.goldIcon{
+  width: 38rpx;
+  height: 38rpx;
+  vertical-align: middle;
+}
+.goldText{
+  margin-left: 30rpx;
+  font-size: 14px;
+}
+.exchange-history{
+  position: absolute;
+  right: 65rpx;
+  top: 20rpx;
+  border: 1rpx solid #4993fa;
+  border-radius: 10%;
+  width: 150rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 14px;
+  color: #4993fa;
+}
+
+.exchange{
+  margin-top: 20rpx;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content:center;
+  justify-content: space-around;
+}
+.item{
+  width: 320rpx;
+  height: 355rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding-top: 10rpx;
+}
+.item-img{
+  height: 180rpx;
+  width: 300rpx;
+  background: #fffcf3;
+  font-size: 14px;
+}
+.item-info{
+  width: 300rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item-name,.item-price,.item-price-refer{
+  padding-left: 30rpx;
+}
+.item-name{
+  font-size: 14px;
+}
+.item-price{
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 12px;
+  color: #4993fa;
+  padding-left: 80rpx;
+  position: relative;
+}
+.item-price-icon{
+  width: 33rpx;
+  height: 33rpx;
+  vertical-align: middle;
+  position: absolute;
+  left: 30rpx;
+  top: 3rpx;
+}
+.item-price-refer{
+  font-size: 12px;
+  color: #a0a0a0;
+}
+
+.tabbar{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+}
+.tabbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255,255,255);
+  height: 100rpx;
+  width: 100%;
+}
+.tabbarItem{
+  text-align: center;
+  height: 80rpx;
+  width: 200rpx;
+  line-height: 80rpx;
+  background: rgb(255,255,255);
+  margin-left: 10px;
+  border-radius: 10%;
+  font-size: 14px;
+}
+.active{
+  background: rgb(249, 249, 249);
+}
+
+.exchangeHistory{
+  position: fixed;
+  left: 50%;
+  margin-left: -37.5%;
+  top: 5%;
+  margin-top: 0;
+  background: #fff;
+  width: 75%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+  font-size: 14px;
+  overflow: hidden;
+}
+.title-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff;
+  z-index: 120;
+}
+.title-bar>text{
+  margin-left: 30rpx;
+}
+.title-bar>view{
+  margin-right: 30rpx;
+  width: 30%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: right;
+}
+.exchange-item-container{
+  position: relative;
+  z-index: 100;
+  height: 100%;
+}
+.exchange-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.exchange-item:first-child{
+  margin-top: 100rpx;
+}
+.exchange-item:not(:first-child){
+  margin-top: 20rpx;
+}
+.exchange-item-left{
+  padding-left: 30rpx;
+}
+.exchange-item-right{
+  padding-right: 30rpx;
+}
+/* page user end*//* pages/index/teacher/teacherIndex/teacherIndex.wxss */

@@ -1,0 +1,11 @@
+
+<image src='{{imgUrl}}/images/notice_bg.jpg' class='bg'></image>
+<view class='notice'>
+  <image src='{{imgUrl}}/images/notice.png'></image>
+  <view class='title'>公 告</view>
+  <view class='content_title'>{{list.title}}</view>
+  <view class='content'>
+    <rich-text nodes='{{list.content}}' type='text'></rich-text>
+  </view>
+  <view class='confirm' bindtap='confirm'>确定</view>
+</view>

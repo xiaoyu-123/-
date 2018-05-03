@@ -1,0 +1,79 @@
+.content{
+  margin: 0 30rpx;
+}
+.content .head{
+  position: relative;
+  height: 230rpx;
+}
+.content .head>image{
+  width: 100%;
+  height: 230rpx;
+  z-index: -3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.head .header{
+  text-align: center;
+  color: #fff;
+  font-size: 24rpx;
+}
+.head .header image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  border: 3px solid #fff;
+  margin: 25rpx 0 10rpx;
+}
+.head::after{
+  display: table;
+  content:'';
+  clear: both;
+}
+.set image{
+  width: 37rpx;
+  height: 37rpx;
+  margin: 30rpx 15rpx;
+
+}
+.set{
+  position: absolute;
+  right: 2%;
+  top: 0;
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  margin: 20rpx 0;
+}
+.list view image{
+  width: 100%;
+  margin: 5rpx 0;
+}
+.list view{
+  width: 48%;
+}
+.list .left image:nth-child(1){
+  height: 316rpx;
+}
+.list .left image:nth-child(2){
+  height: 326rpx;
+}
+.list .left image:nth-child(3){
+  height: 230rpx;
+}
+.list .right image:nth-child(1){
+  height: 150rpx;
+}
+.list .right image:nth-child(2){
+  height: 188rpx;
+}
+.list .right image:nth-child(3){
+  height: 199rpx;
+}
+.list .right image:nth-child(4){
+  height: 150rpx;
+}
+.list .right image:nth-child(5){
+  height: 150rpx;
+}

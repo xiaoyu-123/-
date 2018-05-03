@@ -1,0 +1,111 @@
+<view class='wrapper'>
+  <view class='bg'><image src='{{imgUrl}}/images/challenge1-36.png'></image></view>
+  <view class='header'></view>
+  <view class='content'>
+    <view class='content_top'><image src='{{imgUrl}}/images/challenge1-28.png'></image></view>
+    <view class='conten_header'><image src='{{imgUrl}}/images/challenge1-37.png'></image><view class='title'>本省排名</view></view>
+    <!-- 排名 -->
+    <view class='ranking'>
+      <view class='rankingLi one'>
+        <view class='number'>1</view>
+        <view class='logo'><image src='{{imgUrl}}/images/challenge1-29.png'></image></view>
+        <view class='center'>
+          <view class='topL'>悠悠岁月</view><view class='topR'>探花</view>
+          <view class='bottom'>河北省石家庄市</view>
+        </view>
+        <view class='star'><image src='{{imgUrl}}/images/challenge1-32.png'></image></view>
+        <view class='much1'>×79</view>
+        <view class='hande'><image src='{{imgUrl}}/images/challenge1-34.png'></image></view>
+        <view class='much2'>30</view>
+      </view>
+      <view class='rankingLi'>
+        <view class='number'>2</view>
+        <view class='logo'><image src='{{imgUrl}}/images/challenge1-29.png'></image></view>
+        <view class='center'>
+          <view class='topL'>悠悠岁月</view><view class='topR'>探花</view>
+          <view class='bottom'>河北省石家庄市</view>
+        </view>
+        <view class='star'><image src='{{imgUrl}}/images/challenge1-32.png'></image></view>
+        <view class='much1'>×79</view>
+        <view class='hande'><image src='{{imgUrl}}/images/challenge1-26.png'></image></view>
+        <view class='much2'>30</view>
+      </view>
+      <view class='rankingLi'>
+        <view class='number'>3</view>
+        <view class='logo'><image src='{{imgUrl}}/images/challenge1-29.png'></image></view>
+        <view class='center'>
+          <view class='topL'>悠悠岁月</view><view class='topR'>探花</view>
+          <view class='bottom'>河北省石家庄市</view>
+        </view>
+        <view class='star'><image src='{{imgUrl}}/images/challenge1-32.png'></image></view>
+        <view class='much1'>×79</view>
+        <view class='hande'><image src='{{imgUrl}}/images/challenge1-26.png'></image></view>
+        <view class='much2'>30</view>
+      </view>
+      <view class='rankingLi'>
+        <view class='number'>4</view>
+        <view class='logo'><image src='{{imgUrl}}/images/challenge1-29.png'></image></view>
+        <view class='center'>
+          <view class='topL'>悠悠岁月</view><view class='topR'>探花</view>
+          <view class='bottom'>河北省石家庄市</view>
+        </view>
+        <view class='star'><image src='{{imgUrl}}/images/challenge1-32.png'></image></view>
+        <view class='much1'>×79</view>
+        <view class='hande'><image src='{{imgUrl}}/images/challenge1-26.png'></image></view>
+        <view class='much2'>30</view>
+      </view>
+      <view class='rankingLi'>
+        <view class='number'>5</view>
+        <view class='logo'><image src='{{imgUrl}}/images/challenge1-29.png'></image></view>
+        <view class='center'>
+          <view class='topL'>悠悠岁月</view><view class='topR'>探花</view>
+          <view class='bottom'>河北省石家庄市</view>
+        </view>
+        <view class='star'><image src='{{imgUrl}}/images/challenge1-32.png'></image></view>
+        <view class='much1'>×79</view>
+        <view class='hande'><image src='{{imgUrl}}/images/challenge1-26.png'></image></view>
+        <view class='much2'>30</view>
+      </view>
+      <view class='rankingLi'>
+        <view class='number'>6</view>
+        <view class='logo'><image src='{{imgUrl}}/images/challenge1-29.png'></image></view>
+        <view class='center'>
+          <view class='topL'>悠悠岁月</view><view class='topR'>探花</view>
+          <view class='bottom'>河北省石家庄市</view>
+        </view>
+        <view class='star'><image src='{{imgUrl}}/images/challenge1-32.png'></image></view>
+        <view class='much1'>×79</view>
+        <view class='hande'><image src='{{imgUrl}}/images/challenge1-26.png'></image></view>
+        <view class='much2'>30</view>
+      </view>
+      <view class='rankingLi'>
+        <view class='number'>7</view>
+        <view class='logo'><image src='{{imgUrl}}/images/challenge1-29.png'></image></view>
+        <view class='center'>
+          <view class='topL'>悠悠岁月</view><view class='topR'>探花</view>
+          <view class='bottom'>河北省石家庄市</view>
+        </view>
+        <view class='star'><image src='{{imgUrl}}/images/challenge1-32.png'></image></view>
+        <view class='much1'>×79</view>
+        <view class='hande'><image src='{{imgUrl}}/images/challenge1-26.png'></image></view>
+        <view class='much2'>30</view>
+      </view>
+      <view class='rankingLi'>        
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部 -->
+  <view class='footer'>
+    <view class='footer_logo'><image src='{{imgUrl}}/images/challenge1-35.png'></image></view>
+     <view class='footer_center'>
+          <view class='topL'>悠悠岁月</view><view class='topR'>探花</view>
+          <view class='bottom'>河北省石家庄市</view>
+    </view>
+    <view class='footer_right'>
+      <view class='right_star'><image src='{{imgUrl}}/images/challenge1-31.png'></image></view><view class='ringht_much1'>×56</view><view class='right_hande'><image src='{{imgUrl}}/images/challenge1-30.png'></image></view><view class='right_much2'>30</view>
+      <view class='nowRanking'>当前我在年级排名5名</view>
+    </view>
+    <view class='share' bindtap='shareClick'><image src='{{imgUrl}}/images/challenge1-33.png'></image></view>
+  </view>
+</view>

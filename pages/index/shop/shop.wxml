@@ -1,0 +1,55 @@
+<!--pages/index/shop/shop.wxml-->
+<view class='bg'>
+  <image src='{{imgUrl}}/images/shop_bg.png' class='bg_p'></image>
+  <view class='box'>
+    <view class='top'>
+      <image src='{{imgUrl}}/images/shop_new.png'></image>
+      <view>
+        <image src='{{imgUrl}}/images/shop_li.png'></image>
+        <text>￥1.00 </text>
+      </view>
+    </view>
+    <view class='money'>
+      <view bindtap='buy'>
+        <view class='num'>金币×100</view>
+        <image src='{{imgUrl}}/images/m6.png'></image>
+        <view class='m'>￥6</view>
+      </view>
+      <view>
+        <view class='num'>金币×100</view>
+        <image src='{{imgUrl}}/images/m6.png'></image>
+        <view class='m'>￥6</view>
+      </view>
+      <view>
+        <view class='num'>金币×100</view>
+        <image src='{{imgUrl}}/images/m6.png'></image>
+        <view class='m'>￥6</view>
+      </view>
+      <view>
+        <view class='num'>金币×100</view>
+        <image src='{{imgUrl}}/images/m6+.png'></image>
+        <view class='m'>￥128</view>
+      </view>
+      <view>
+        <view class='num'>金币×100</view>
+        <image src='{{imgUrl}}/images/m6+.png'></image>
+        <view class='m'>￥128</view>
+      </view>
+      <view>
+        <view class='num'>金币×100</view>
+        <image src='{{imgUrl}}/images/m6+.png'></image>
+        <view class='m'>￥128</view>
+      </view>
+    </view>
+    <button open-type=''>邀请好友来玩</button>
+  </view>
+</view>
+<view class='modal' wx:if='{{modal==true}}'>
+  <view class='dialog'>
+    <image src='{{imgUrl}}/images/m6.png' class='head'></image>
+    <text class='close' bindtap='close'>×</text>
+    <view class='m_bg'>少量金币</view>
+    <view class='huo'>立刻获得521金币</view>
+    <text class='buy'>6元购买</text>
+  </view>
+</view>
